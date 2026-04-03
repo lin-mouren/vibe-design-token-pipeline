@@ -1,0 +1,37 @@
+{
+  "comp": {
+    "message": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Message/Toast background", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-bg-default" } } }
+      },
+      "border": {
+        "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Message card border", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-border-default" } } }
+      },
+      "shadow": {
+        "default": { "$type": "shadow", "$value": "{semantic.shadow.md}", "$description": "Message shadow", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-shadow-default" } } }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.sm}", "$description": "Message radius (4px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-radius-default" } } }
+      },
+      "padding": {
+        "v": { "$type": "dimension", "$value": "10px",              "$description": "Message vertical padding",            "$extensions": { "com.arco.design": { "cssVar": "--comp-message-padding-v" } } },
+        "h": { "$type": "dimension", "$value": "{semantic.spacing.md}",   "$description": "Message horizontal padding (16px)",   "$extensions": { "com.arco.design": { "cssVar": "--comp-message-padding-h" } } }
+      },
+      "gap": {
+        "icon": { "$type": "dimension", "$value": "{semantic.spacing.xs}", "$description": "Icon-to-text gap (8px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-gap-icon" } } }
+      },
+      "text": {
+        "default": { "$type": "color", "$value": "{semantic.color.text.primary}", "$description": "Message text color", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-text-default" } } }
+      },
+      "icon": {
+        "info":    { "$type": "color", "$value": "{semantic.color.primary.default}", "$description": "Info icon circle color (blue)",    "$extensions": { "com.arco.design": { "cssVar": "--comp-message-icon-info" } } },
+        "success": { "$type": "color", "$value": "{semantic.color.success.default}", "$description": "Success icon circle color (green)", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-icon-success" } } },
+        "warning": { "$type": "color", "$value": "{semantic.color.warning.default}", "$description": "Warning icon circle color (orange)", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-icon-warning" } } },
+        "error":   { "$type": "color", "$value": "{semantic.color.danger.default}",  "$description": "Error icon circle color (red)",     "$extensions": { "com.arco.design": { "cssVar": "--comp-message-icon-error" } } }
+      },
+      "zindex": {
+        "default": { "$type": "number", "$value": 1010, "$description": "Message z-index", "$extensions": { "com.arco.design": { "cssVar": "--comp-message-zindex-default" } } }
+      }
+    }
+  }
+}

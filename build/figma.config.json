@@ -1,0 +1,37 @@
+{
+  "$schema": "https://www.figma.com/developers/api#code-connect",
+  "codeConnect": {
+    "parser": "react",
+    "label": "React",
+    "include": ["source/component-contracts/*.contract.json"],
+    "storybook": {
+      "url": "http://localhost:6006",
+      "storiesGlob": "verification/storybook/**/*.stories.tsx"
+    }
+  },
+  "variablesSync": {
+    "status": "stub",
+    "note": "Populate fileKey and pat before running sync. See figma/variables-sync/README.md.",
+    "fileKey": "FIGMA_FILE_KEY_HERE",
+    "patEnvVar": "FIGMA_PAT",
+    "syncDir": "source/tokens/",
+    "tokenFormat": "DTCG",
+    "modes": {
+      "light": "source/tokens/themes/light.tokens.json",
+      "dark": "source/tokens/themes/dark.tokens.json"
+    },
+    "collectionMapping": {
+      "Primitives": "source/tokens/core/",
+      "Semantic": "source/tokens/semantic/",
+      "Components": "source/tokens/components/"
+    }
+  },
+  "gate": {
+    "description": "Production Gate 1 — Figma Gate. Run after variablesSync to verify all values are bound to library variables.",
+    "checks": [
+      "all color/spacing/radius/font values bound to Figma Library Variables (no bare literals)",
+      "all repeated UI elements use Library Components (no detached frames)",
+      "variable bindings reference semantic/ layer, not palette/ layer directly"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "$schema": "https://www.designtokens.org/component-contract/v1",
+  "component": "Badge/Tag",
+  "figmaNodeName": "Badge/Tag",
+  "status": "medium-confidence",
+  "note": "Validates high-contrast color token coverage, color variant matrix, and compact spacing. Badge (numeric overlay) and Tag (inline label) share the same token dimensions.",
+  "codePackage": "@arco-design/web-react",
+  "codeImport": "import { Badge, Tag } from '@arco-design/web-react'",
+
+  "subComponents": {
+    "Badge": {
+      "description": "Numeric status indicator — overlays on other elements",
+      "codeImport": "import { Badge } from '@arco-design/web-react'"
+    },
+    "Tag": {
+      "description": "Inline label — standalone compact label with optional close action",
+      "codeImport": "import { Tag } from '@arco-design/web-react'"
+    }
+  },
+
+  "variants": {
+    "color": {
+      "values": ["arcoblue", "red", "orangered", "orange", "gold", "lime", "green", "cyan", "blue", "purple", "pinkpurple", "magenta", "gray"],
+      "default": "arcoblue",
+      "description": "Tag/Badge semantic color variant"
+    },
+    "size": {
+      "values": ["small", "default", "medium", "large"],
+      "default": "default",
+      "description": "Tag size scale"
+    },
+    "bordered": {
+      "values": [true, false],
+      "default": false,
+      "description": "Show border ring on Tag"
+    },
+    "closable": {
+      "values": [true, false],
+      "default": false,
+      "description": "Show close icon on Tag"
+    },
+    "dot": {
+      "values": [true, false],
+      "default": false,
+      "description": "Badge: render as dot instead of number"
+    },
+    "status": {
+      "values": ["default", "processing", "success", "warning", "error"],
+      "default": "default",
+      "description": "Badge status dot semantic color"
+    }
+  },
+
+  "slots": {
+    "default": {
+      "description": "Tag label text content",
+      "required": false
+    },
+    "icon": {
+      "description": "Leading icon in Tag",
+      "required": false
+    }
+  },
+
+  "tokenBindings": {
+    "background-arcoblue": {
+      "token": "color.primary.1",
+      "property": "background-color",
+      "applyWhen": { "color": "arcoblue" },
+      "resolvedCssVar": "--primary-1",
+      "confidence": "medium"
+    },
+    "text-color-arcoblue": {
+      "token": "color.primary.6",
+      "property": "color",
+      "applyWhen": { "color": "arcoblue" },
+      "resolvedCssVar": "--primary-6",
+      "confidence": "medium"
+    },
+    "background-red": {
+      "token": "color.danger.1",
+      "property": "background-color",
+      "applyWhen": { "color": "red" },
+      "resolvedCssVar": "--danger-1",
+      "confidence": "medium"
+    },
+    "text-color-red": {
+      "token": "color.danger.6",
+      "property": "color",
+      "applyWhen": { "color": "red" },
+      "resolvedCssVar": "--danger-6",
+      "confidence": "medium"
+    },
+    "background-green": {
+      "token": "color.success.1",
+      "property": "background-color",
+      "applyWhen": { "color": "green" },
+      "resolvedCssVar": "--success-1",
+      "confidence": "medium"
+    },
+    "text-color-green": {
+      "token": "color.success.6",
+      "property": "color",
+      "applyWhen": { "color": "green" },
+      "resolvedCssVar": "--success-6",
+      "confidence": "medium"
+    },
+    "background-gold": {
+      "token": "color.warning.1",
+      "property": "background-color",
+      "applyWhen": { "color": "gold" },
+      "resolvedCssVar": "--warning-1",
+      "confidence": "medium"
+    },
+    "text-color-gold": {
+      "token": "color.warning.6",
+      "property": "color",
+      "applyWhen": { "color": "gold" },
+      "resolvedCssVar": "--warning-6",
+      "confidence": "medium"
+    },
+    "border-radius": {
+      "token": "border-radius.small",
+      "property": "border-radius",
+      "applyWhen": {},
+      "resolvedCssVar": "--border-radius-small",
+      "confidence": "high"
+    },
+    "font-size": {
+      "token": "font-size.body.2",
+      "property": "font-size",
+      "applyWhen": { "size": "medium" },
+      "resolvedCssVar": "--font-size-body-2",
+      "confidence": "medium"
+    },
+    "padding-horizontal": {
+      "token": "spacing.6",
+      "property": "padding-left",
+      "applyWhen": { "size": "medium" },
+      "resolvedCssVar": "--space-6",
+      "confidence": "low",
+      "note": "Compact spacing — approximate, needs CSS verification"
+    },
+    "badge-background": {
+      "token": "color.danger.6",
+      "property": "background-color",
+      "applyWhen": { "component": "Badge" },
+      "resolvedCssVar": "--danger-6",
+      "confidence": "high"
+    }
+  },
+
+  "interactionStates": ["default", "hover"],
+
+  "figmaVariantMapping": {
+    "Color=Blue": { "color": "arcoblue" },
+    "Color=Red": { "color": "red" },
+    "Color=Green": { "color": "green" },
+    "Color=Orange": { "color": "orange" },
+    "Color=Gold": { "color": "gold" },
+    "Color=Gray": { "color": "gray" },
+    "Size=Small": { "size": "small" },
+    "Size=Medium": { "size": "medium" },
+    "Size=Large": { "size": "large" },
+    "Closable=True": { "closable": true },
+    "Bordered=True": { "bordered": true }
+  },
+
+  "evidence": {
+    "confidence": "medium",
+    "sources": [
+      "arco-design GitHub source (Tag + Badge component styles)",
+      "Arco Design color palette (https://arco.design/react/docs/palette)",
+      "Arco Design CSS variable reference (https://arco.design/react/docs/token)"
+    ],
+    "extractedBy": "com.anthropic.dtcg-skill",
+    "lastVerified": "2026-03-30",
+    "gaps": [
+      "Exact WCAG contrast ratios for each color variant need automated check",
+      "Badge numeric font-weight and line-height tokens not verified",
+      "Custom color (string prop) token path mapping not defined"
+    ]
+  }
+}

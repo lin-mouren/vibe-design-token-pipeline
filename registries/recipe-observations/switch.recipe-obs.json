@@ -1,0 +1,49 @@
+{
+  "componentName": "Switch",
+  "contractFile": "component-contracts/switch.contract.json",
+  "observedAt": "2026-04-01T00:00:00Z",
+  "recipes": [
+    {
+      "name": "switch-mini",
+      "description": "Switch mini size variant",
+      "tokenPaths": [
+        "comp.switch.size.mini.height",
+        "comp.switch.size.mini.width"
+      ],
+      "tags": [
+        "interactive",
+        "toggle",
+        "mini"
+      ]
+    },
+    {
+      "name": "switch-small",
+      "description": "Switch small size variant",
+      "tokenPaths": [
+        "comp.switch.size.small.height",
+        "comp.switch.size.small.width"
+      ],
+      "tags": [
+        "interactive",
+        "toggle",
+        "small"
+      ]
+    },
+    {
+      "name": "switch-default",
+      "description": "Switch default size variant",
+      "tokenPaths": [
+        "comp.switch.track.bg.off",
+        "comp.switch.track.bg.on",
+        "comp.switch.track.bg.disabled",
+        "comp.switch.size.default.height",
+        "comp.switch.size.default.width"
+      ],
+      "tags": [
+        "interactive",
+        "toggle",
+        "default"
+      ]
+    }
+  ]
+}

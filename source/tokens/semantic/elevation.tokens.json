@@ -1,0 +1,9 @@
+{
+  "semantic": {
+    "shadow": {
+      "sm": { "$type": "shadow", "$value": "{core.shadow.level1}", "$description": "Subtle elevation (level 1) — cards, dropdowns", "$extensions": { "com.arco.design": { "cssVar": "--semantic-shadow-sm" } } },
+      "md": { "$type": "shadow", "$value": "{core.shadow.level2}", "$description": "Medium elevation (level 2) — floating elements, messages", "$extensions": { "com.arco.design": { "cssVar": "--semantic-shadow-md" } } },
+      "lg": { "$type": "shadow", "$value": "{core.shadow.level3}", "$description": "High elevation (level 3) — modals, drawers, overlays", "$extensions": { "com.arco.design": { "cssVar": "--semantic-shadow-lg" } } }
+    }
+  }
+}

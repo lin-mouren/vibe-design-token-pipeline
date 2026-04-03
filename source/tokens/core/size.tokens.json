@@ -1,0 +1,30 @@
+{
+  "core": {
+    "size": {
+      "component": {
+        "$description": "Arco 标准组件高度 4 档",
+        "mini":    { "$type": "dimension", "$value": "24px", "$description": "Mini 组件高度", "$extensions": { "com.arco.design": { "cssVar": "--core-size-component-mini" } } },
+        "small":   { "$type": "dimension", "$value": "28px", "$description": "Small 组件高度", "$extensions": { "com.arco.design": { "cssVar": "--core-size-component-small" } } },
+        "default": { "$type": "dimension", "$value": "32px", "$description": "Default 组件高度", "$extensions": { "com.arco.design": { "cssVar": "--core-size-component-default" } } },
+        "large":   { "$type": "dimension", "$value": "36px", "$description": "Large 组件高度", "$extensions": { "com.arco.design": { "cssVar": "--core-size-component-large" } } }
+      },
+      "icon": {
+        "$description": "图标尺寸规格",
+        "12": { "$type": "dimension", "$value": "12px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-12" } } },
+        "14": { "$type": "dimension", "$value": "14px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-14" } } },
+        "16": { "$type": "dimension", "$value": "16px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-16" } } },
+        "18": { "$type": "dimension", "$value": "18px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-18" } } },
+        "20": { "$type": "dimension", "$value": "20px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-20" } } },
+        "24": { "$type": "dimension", "$value": "24px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-icon-24" } } }
+      },
+      "avatar": {
+        "$description": "头像尺寸规格",
+        "mini":    { "$type": "dimension", "$value": "24px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-avatar-mini" } } },
+        "small":   { "$type": "dimension", "$value": "28px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-avatar-small" } } },
+        "default": { "$type": "dimension", "$value": "32px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-avatar-default" } } },
+        "large":   { "$type": "dimension", "$value": "40px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-avatar-large" } } },
+        "xlarge":  { "$type": "dimension", "$value": "64px", "$extensions": { "com.arco.design": { "cssVar": "--core-size-avatar-xlarge" } } }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "system": "arco-design",
+  "description": "Approved component registry. Agents must use only components listed here. If a needed component is absent, emit COMPONENT_GAP \u2014 never invent or clone.",
+  "components": [
+    {
+      "name": "Button",
+      "figmaNodeName": "Button",
+      "contractPath": "source/component-contracts/button.contract.json",
+      "guidelinesPath": "guidelines/components/button.md",
+      "tokenFile": "source/tokens/components/button.tokens.json",
+      "storybookPath": "verification/storybook/Button.stories.tsx",
+      "status": "stable",
+      "variants": {
+        "type": [
+          "primary",
+          "secondary",
+          "outline",
+          "text",
+          "dashed"
+        ],
+        "status": [
+          "default",
+          "warning",
+          "danger",
+          "success"
+        ],
+        "size": [
+          "mini",
+          "small",
+          "medium",
+          "large"
+        ]
+      },
+      "contractFile": "component-contracts/button.contract.json",
+      "tokenCount": 81,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Input",
+      "figmaNodeName": "Input",
+      "contractPath": "source/component-contracts/input.contract.json",
+      "guidelinesPath": "guidelines/components/input.md",
+      "tokenFile": "source/tokens/components/input.tokens.json",
+      "storybookPath": "verification/storybook/Input.stories.tsx",
+      "status": "low-confidence",
+      "note": "Token bindings derived from CSS variable patterns (medium confidence). Requires Figma boundVariables audit before promotion to stable.",
+      "contractFile": "component-contracts/input.contract.json",
+      "tokenCount": 24,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Card",
+      "contractFile": "component-contracts/card.contract.json",
+      "tokenFile": "source/tokens/components/card.tokens.json",
+      "tokenCount": 9,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Form",
+      "contractFile": "component-contracts/form.contract.json",
+      "tokenFile": "source/tokens/components/form.tokens.json",
+      "tokenCount": 7,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Switch",
+      "contractFile": "component-contracts/switch.contract.json",
+      "tokenFile": "source/tokens/components/switch.tokens.json",
+      "tokenCount": 11,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Avatar",
+      "contractFile": "component-contracts/avatar.contract.json",
+      "tokenFile": "source/tokens/components/avatar.tokens.json",
+      "tokenCount": 10,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Drawer",
+      "contractFile": "component-contracts/drawer.contract.json",
+      "tokenFile": "source/tokens/components/drawer.tokens.json",
+      "tokenCount": 9,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Modal",
+      "contractFile": "component-contracts/modal.contract.json",
+      "tokenFile": "source/tokens/components/modal.tokens.json",
+      "tokenCount": 11,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Message",
+      "contractFile": "component-contracts/message.contract.json",
+      "tokenFile": "source/tokens/components/message.tokens.json",
+      "tokenCount": 13,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Menu",
+      "contractFile": "component-contracts/menu.contract.json",
+      "tokenFile": "source/tokens/components/menu.tokens.json",
+      "tokenCount": 10,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Image",
+      "contractFile": "component-contracts/image.contract.json",
+      "tokenFile": "source/tokens/components/image.tokens.json",
+      "tokenCount": 12,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    },
+    {
+      "name": "Icon",
+      "contractFile": "component-contracts/icon.contract.json",
+      "tokenFile": "source/tokens/components/icon.tokens.json",
+      "tokenCount": 9,
+      "gapCount": 0,
+      "semanticLayerVerified": true
+    }
+  ]
+}

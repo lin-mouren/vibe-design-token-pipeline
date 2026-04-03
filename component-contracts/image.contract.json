@@ -1,0 +1,77 @@
+{
+  "componentName": "Image",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 12,
+  "tokens": [
+    {
+      "tokenPath": "comp.image.aspect.square",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.4-3",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.3-2",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.16-9",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.21-9",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.3-4",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.aspect.9-16",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.radius.default",
+      "semanticAlias": "core.radius.medium",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.overlay.color",
+      "semanticAlias": "semantic.color.overlay.image",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.placeholder.bg",
+      "semanticAlias": "semantic.color.surface.3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.placeholder.color",
+      "semanticAlias": "semantic.color.text.tertiary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.image.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.image.radius.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.medium}"
+    }
+  ]
+}

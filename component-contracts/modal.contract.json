@@ -1,0 +1,92 @@
+{
+  "componentName": "Modal",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 11,
+  "tokens": [
+    {
+      "tokenPath": "comp.modal.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.overlay.color",
+      "semanticAlias": "semantic.color.mask.bg",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.shadow.default",
+      "semanticAlias": "core.shadow.level3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.header.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.footer.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.title.font.size",
+      "semanticAlias": "core.text.size.16",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.title.font.weight",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.width.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.radius.default",
+      "semanticAlias": "core.radius.large",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.padding.default",
+      "semanticAlias": "core.space.5",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.modal.zindex.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.modal.shadow.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.shadow.level3}"
+    },
+    {
+      "tokenPath": "comp.modal.title.font.size",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.16}"
+    },
+    {
+      "tokenPath": "comp.modal.width.default",
+      "violationType": "raw-value",
+      "value": "520px"
+    },
+    {
+      "tokenPath": "comp.modal.radius.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.large}"
+    },
+    {
+      "tokenPath": "comp.modal.padding.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.5}"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "semantic": {
+    "color": {
+      "text": {
+        "primary":   { "$type": "color", "$value": "{core.color.neutral.10}", "$description": "Primary text – titles, labels", "$extensions": { "com.arco.design": { "tokenName": "color-text-1", "cssVar": "--semantic-color-text-primary" } } },
+        "secondary": { "$type": "color", "$value": "{core.color.neutral.8}", "$description": "Secondary text – descriptions", "$extensions": { "com.arco.design": { "tokenName": "color-text-2", "cssVar": "--semantic-color-text-secondary" } } },
+        "tertiary":  { "$type": "color", "$value": "{core.color.neutral.6}", "$description": "Tertiary text – placeholder", "$extensions": { "com.arco.design": { "tokenName": "color-text-3", "cssVar": "--semantic-color-text-tertiary" } } },
+        "disabled":  { "$type": "color", "$value": "{core.color.neutral.4}", "$description": "Disabled text", "$extensions": { "com.arco.design": { "tokenName": "color-text-4", "cssVar": "--semantic-color-text-disabled" } } },
+        "inverse":   { "$type": "color", "$value": "{core.color.white}", "$description": "Inverse text (on dark bg)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-text-inverse" } } }
+      },
+      "surface": {
+        "1": { "$type": "color", "$value": "#ffffff", "$description": "Surface 1 – white, card/primary", "$extensions": { "com.arco.design": { "tokenName": "color-bg-1", "cssVar": "--semantic-color-surface-1" } } },
+        "2": { "$type": "color", "$value": "{core.color.neutral.1}", "$description": "Surface 2 – near-white fill", "$extensions": { "com.arco.design": { "tokenName": "color-bg-2", "cssVar": "--semantic-color-surface-2" } } },
+        "3": { "$type": "color", "$value": "{core.color.neutral.2}", "$description": "Surface 3 – hover fill, table header", "$extensions": { "com.arco.design": { "tokenName": "color-bg-3", "cssVar": "--semantic-color-surface-3" } } },
+        "4": { "$type": "color", "$value": "{core.color.neutral.3}", "$description": "Surface 4 – selected/strong fill", "$extensions": { "com.arco.design": { "tokenName": "color-bg-4", "cssVar": "--semantic-color-surface-4" } } },
+        "page": { "$type": "color", "$value": "{core.color.neutral.1}", "$description": "Page background", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-surface-page" } } }
+      },
+      "border": {
+        "default": { "$type": "color", "$value": "{core.color.neutral.3}", "$description": "Default border – Input, Card", "$extensions": { "com.arco.design": { "tokenName": "color-border-2", "cssVar": "--semantic-color-border-default" } } },
+        "strong":  { "$type": "color", "$value": "{core.color.neutral.4}", "$description": "Strong border – hover", "$extensions": { "com.arco.design": { "tokenName": "color-border-3", "cssVar": "--semantic-color-border-strong" } } },
+        "subtle":  { "$type": "color", "$value": "{core.color.neutral.2}", "$description": "Subtle border – divider", "$extensions": { "com.arco.design": { "tokenName": "color-border-1", "cssVar": "--semantic-color-border-subtle" } } }
+      },
+      "mask": {
+        "bg": { "$type": "color", "$value": "rgba(29,33,41,0.6)", "$description": "Modal overlay background", "$extensions": { "com.arco.design": { "tokenName": "color-mask-bg", "cssVar": "--semantic-color-mask-bg" } } }
+      },
+      "fill": {
+        "neutral": {
+          "default":  { "$type": "color", "$value": "{core.color.neutral.4}", "$description": "Neutral fill — toggle off track, unchecked state", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-fill-neutral-default" } } },
+          "disabled": { "$type": "color", "$value": "{core.color.neutral.3}", "$description": "Neutral fill disabled — muted track, disabled toggle", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-fill-neutral-disabled" } } }
+        }
+      },
+      "overlay": {
+        "image": { "$type": "color", "$value": "rgba(0,0,0,0.5)", "$description": "Image preview hover overlay — semi-transparent black scrim", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-overlay-image" } } }
+      }
+    }
+  }
+}

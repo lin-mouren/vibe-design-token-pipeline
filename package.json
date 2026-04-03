@@ -1,0 +1,70 @@
+{
+  "name": "@arco-design/tokens",
+  "version": "0.2.0",
+  "description": "Arco Design DTCG 2025.10 token package — CSS, SCSS, Tailwind, JS, iOS, Android",
+  "type": "module",
+  "main": "dist/ts/arco.tokens.js",
+  "exports": {
+    ".": "./dist/ts/arco.tokens.js",
+    "./css": "./dist/css/arco.css",
+    "./css/dark": "./dist/css/arco-dark.css",
+    "./scss": "./dist/scss/_arco-tokens.scss",
+    "./tailwind": "./dist/tailwind/arco-preset.js",
+    "./json": "./dist/json/arco.resolved.json"
+  },
+  "scripts": {
+    "build": "npm run tokens:explode && style-dictionary build --config build/style-dictionary.config.mjs",
+    "build:watch": "style-dictionary build --config build/style-dictionary.config.mjs --watch",
+    "validate": "python3 scripts/validate_package.py .",
+    "validate:tokens": "node scripts/validate-dtcg.mjs",
+    "index": "python3 scripts/build_token_index.py source/tokens",
+    "figma:sync": "node figma/variables-sync/figma-to-dtcg.mjs",
+    "figma:push": "node figma/variables-sync/dtcg-to-figma.mjs",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build -o verification/storybook-dist",
+    "test:snapshot": "storybook --ci --smoke-test",
+    "test:playwright": "npx playwright test",
+    "test:playwright:token-contracts": "npx playwright test --project=token-contracts",
+    "test:playwright:interaction": "npx playwright test --project=interaction",
+    "test:playwright:visual": "npx playwright test --project=visual-regression",
+    "test:playwright:a11y": "npx playwright test --project=a11y-audit",
+    "test:playwright:update-snapshots": "npx playwright test --update-snapshots",
+    "gate:figma": "node scripts/gates/gate-figma.mjs",
+    "gate:code": "node scripts/gates/gate-code.mjs",
+    "gate:delivery": "node scripts/gates/gate-delivery.mjs",
+    "gates": "bash scripts/run-production-gates.sh",
+    "release": "npm run validate && npm run build && npm run gates",
+    "tokens:explode": "node scripts/token-exploder.js",
+    "tokens:lint": "node scripts/token-linter.mjs",
+    "stories:generate": "node scripts/generate-stories.mjs",
+    "clean": "rm -rf dist",
+    "figma:mcp-pull": "node figma/variables-sync/figma-mcp-pull.mjs",
+    "figma:mcp-push": "node figma/variables-sync/figma-mcp-push.mjs"
+  },
+  "devDependencies": {
+    "@arco-design/web-react": "^2.x",
+    "@axe-core/playwright": "^4.11.1",
+    "@playwright/test": "^1.58.2",
+    "@storybook/addon-a11y": "^8.0.0",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "storybook": "^8.0.0",
+    "style-dictionary": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "files": [
+    "dist/",
+    "source/tokens/",
+    "source/component-contracts/",
+    "registries/",
+    "release/delivery-manifest.json"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

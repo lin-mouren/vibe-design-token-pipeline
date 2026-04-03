@@ -1,0 +1,35 @@
+{
+  "comp": {
+    "drawer": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Drawer background", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-bg-default" } } }
+      },
+      "overlay": {
+        "color": { "$type": "color", "$value": "{semantic.color.mask.bg}", "$description": "Drawer overlay color", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-overlay-color" } } }
+      },
+      "shadow": {
+        "default": { "$type": "shadow", "$value": "{semantic.shadow.lg}", "$description": "Drawer edge shadow (slides in from side)", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-shadow-default" } } }
+      },
+      "title": {
+        "font": {
+          "size":   { "$type": "dimension", "$value": "{semantic.typography.size.md}", "$description": "Drawer title font size 16px", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-title-font-size" } } },
+          "weight": { "$type": "fontWeight", "$value": 500, "$description": "Drawer title font weight (medium)", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-title-font-weight" } } }
+        }
+      },
+      "width": {
+        "default": { "$type": "dimension", "$value": "378px", "$description": "Default drawer width", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-width-default" } } }
+      },
+      "padding": {
+        "default": { "$type": "dimension", "$value": "{semantic.spacing.lg}", "$description": "Drawer padding (24px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-padding-default" } } }
+      },
+      "header": {
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Drawer header divider", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-header-border-default" } } }
+        }
+      },
+      "zindex": {
+        "default": { "$type": "number", "$value": 1000, "$description": "Drawer z-index", "$extensions": { "com.arco.design": { "cssVar": "--comp-drawer-zindex-default" } } }
+      }
+    }
+  }
+}

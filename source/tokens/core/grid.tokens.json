@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "core": {
+    "grid": {
+      "$description": "Arco Design 栅格系统",
+      "columns": {
+        "standard": {
+          "$type": "number",
+          "$value": 24,
+          "$description": "推荐 24 等分栅格",
+          "$extensions": { "com.arco.design": { "cssVar": "--core-grid-columns-standard" } }
+        },
+        "simple": {
+          "$type": "number",
+          "$value": 12,
+          "$description": "简单页面 12 列",
+          "$extensions": { "com.arco.design": { "cssVar": "--core-grid-columns-simple" } }
+        }
+      },
+      "gutter": {
+        "default": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$description": "推荐水槽间距 24px",
+          "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-default" } }
+        },
+        "options": {
+          "$description": "可用水槽选项",
+          "8":  { "$type": "dimension", "$value": "8px",  "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-8" } } },
+          "16": { "$type": "dimension", "$value": "16px", "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-16" } } },
+          "24": { "$type": "dimension", "$value": "24px", "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-24" } } },
+          "32": { "$type": "dimension", "$value": "32px", "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-32" } } },
+          "40": { "$type": "dimension", "$value": "40px", "$extensions": { "com.arco.design": { "cssVar": "--core-grid-gutter-40" } } }
+        }
+      },
+      "breakpoints": {
+        "$description": "Arco Design 响应式断点",
+        "xs":  { "$type": "dimension", "$value": "0px",    "$description": "xs < 576px",  "$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-xs" } } },
+        "sm":  { "$type": "dimension", "$value": "576px",  "$description": "sm ≥ 576px",  "$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-sm" } } },
+        "md":  { "$type": "dimension", "$value": "768px",  "$description": "md ≥ 768px",  "$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-md" } } },
+        "lg":  { "$type": "dimension", "$value": "992px",  "$description": "lg ≥ 992px",  "$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-lg" } } },
+        "xl":  { "$type": "dimension", "$value": "1200px", "$description": "xl ≥ 1200px", "$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-xl" } } },
+        "xxl": { "$type": "dimension", "$value": "1600px", "$description": "xxl ≥ 1600px","$extensions": { "com.arco.design": { "cssVar": "--core-grid-breakpoint-xxl" } } }
+      }
+    }
+  }
+}

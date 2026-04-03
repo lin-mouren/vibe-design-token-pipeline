@@ -1,0 +1,51 @@
+{
+  "comp": {
+    "input": {
+      "bg": {
+        "default":  { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Input default background", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-bg-default" } } },
+        "disabled": { "$type": "color", "$value": "{semantic.color.surface.2}", "$description": "Input disabled background", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-bg-disabled" } } }
+      },
+      "border": {
+        "default":  { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Input border default", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-default" } } },
+        "hover":    { "$type": "color", "$value": "{semantic.color.border.strong}", "$description": "Input border hover", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-hover" } } },
+        "focus":    { "$type": "color", "$value": "{semantic.color.primary.default}", "$description": "Input border focus", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-focus" } } },
+        "error":    { "$type": "color", "$value": "{semantic.color.danger.default}", "$description": "Input border error state", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-error" } } },
+        "warning":  { "$type": "color", "$value": "{semantic.color.warning.default}", "$description": "Input border warning state", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-warning" } } },
+        "disabled": { "$type": "color", "$value": "{semantic.color.border.subtle}", "$description": "Input border disabled", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-border-disabled" } } }
+      },
+      "text": {
+        "default":     { "$type": "color", "$value": "{semantic.color.text.primary}", "$description": "Input text", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-text-default" } } },
+        "placeholder": { "$type": "color", "$value": "{semantic.color.text.tertiary}", "$description": "Input placeholder", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-text-placeholder" } } },
+        "disabled":    { "$type": "color", "$value": "{semantic.color.text.disabled}", "$description": "Input disabled text", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-text-disabled" } } }
+      },
+      "font": {
+        "$description": "各尺寸输入框的字体大小",
+        "size": {
+          "mini":    { "$type": "dimension", "$value": "{semantic.typography.size.xs}", "$description": "Mini 字号 12px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-font-size-mini" } } },
+          "small":   { "$type": "dimension", "$value": "{semantic.typography.size.xs}", "$description": "Small 字号 12px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-font-size-small" } } },
+          "default": { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Default 字号 14px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-font-size-default" } } },
+          "large":   { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Large 字号 14px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-font-size-large" } } }
+        }
+      },
+      "padding": {
+        "$description": "各尺寸输入框的水平内边距",
+        "h": {
+          "mini":    { "$type": "dimension", "$value": "6px",  "$description": "Mini 水平内边距 6px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-padding-h-mini" } } },
+          "small":   { "$type": "dimension", "$value": "{semantic.spacing.xs}", "$description": "Small 水平内边距 8px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-padding-h-small" } } },
+          "default": { "$type": "dimension", "$value": "{semantic.spacing.sm}", "$description": "Default 水平内边距 12px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-padding-h-default" } } },
+          "large":   { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Large 水平内边距 16px", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-padding-h-large" } } }
+        }
+      },
+      "size": {
+        "$description": "输入框高度",
+        "mini":    { "$type": "dimension", "$value": "{semantic.size.component.mini}", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-size-mini" } } },
+        "small":   { "$type": "dimension", "$value": "{semantic.size.component.small}", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-size-small" } } },
+        "default": { "$type": "dimension", "$value": "{semantic.size.component.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-size-default" } } },
+        "large":   { "$type": "dimension", "$value": "{semantic.size.component.large}", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-size-large" } } }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.sm}", "$extensions": { "com.arco.design": { "cssVar": "--comp-input-radius-default" } } }
+      }
+    }
+  }
+}

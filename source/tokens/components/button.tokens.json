@@ -1,0 +1,186 @@
+{
+  "comp": {
+    "button": {
+      "primary": {
+        "$description": "实心主色按钮（type=primary, status=normal）",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.primary.hover}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.primary.active}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.primary.disabled}","$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-text-disabled" } } }
+        },
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-primary-border-default" } } }
+        }
+      },
+      "secondary": {
+        "$description": "灰色填充按钮（type=secondary）— 中性色背景，Arco 官网 Secondary 样式",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.secondary.default}",  "$description": "Secondary 默认背景（浅灰）", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.secondary.hover}",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.secondary.active}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.secondary.disabled}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.primary}",   "$description": "Secondary 文字为主文字色", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.border.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.border.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-secondary-border-disabled" } } }
+        }
+      },
+      "outline": {
+        "$description": "描边按钮（type=outline）— 透明底/白底 + 主色边框 + 主色文字",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.surface.1}",    "$description": "outline 默认白底", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.primary.light}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.primary.1}",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.surface.1}",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.border.default}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-border-disabled" } } }
+        }
+      },
+      "dashed": {
+        "$description": "虚线边框按钮（type=dashed）",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.surface.1}",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.primary.light}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-bg-hover" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.surface.1}",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.primary}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.border.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "禁用态虚线边框保持中性色", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-dashed-border-disabled" } } }
+        }
+      },
+      "text": {
+        "$description": "纯文字按钮（type=text）— 无边框无背景",
+        "bg": {
+          "default":  { "$type": "color", "$value": "transparent",                   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-text-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.surface.3}",     "$extensions": { "com.arco.design": { "cssVar": "--comp-button-text-bg-hover" } } },
+          "disabled": { "$type": "color", "$value": "transparent",                   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-text-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-text-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-text-text-disabled" } } }
+        }
+      },
+      "danger": {
+        "$description": "危险实心按钮（status=danger）— 红色",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.danger.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.danger.hover}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.danger.active}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.danger.light}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.danger.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.danger.light}",   "$description": "禁用态边框与背景同色（danger.light）", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-danger-border-disabled" } } }
+        }
+      },
+      "warning": {
+        "$description": "警告实心按钮（status=warning）— 橙色",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.warning.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.warning.hover}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.warning.active}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.warning.light}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.warning.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.warning.light}",   "$description": "禁用态边框与背景同色（warning.light）", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-warning-border-disabled" } } }
+        }
+      },
+      "success": {
+        "$description": "成功实心按钮（status=success）— 绿色",
+        "bg": {
+          "default":  { "$type": "color", "$value": "{semantic.color.success.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-bg-default" } } },
+          "hover":    { "$type": "color", "$value": "{semantic.color.success.hover}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-bg-hover" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.success.active}",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-bg-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.success.light}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-bg-disabled" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-text-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-text-disabled" } } }
+        },
+        "border": {
+          "default":  { "$type": "color", "$value": "{semantic.color.success.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-border-default" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.success.light}",   "$description": "禁用态边框与背景同色（success.light）", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-success-border-disabled" } } }
+        }
+      },
+      "outline-danger": {
+        "$description": "描边危险按钮（type=outline, status=danger）",
+        "bg": {
+          "default": { "$type": "color", "$value": "{semantic.color.surface.1}",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-danger-bg-default" } } },
+          "hover":   { "$type": "color", "$value": "{semantic.color.danger.light}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-danger-bg-hover" } } }
+        },
+        "text": {
+          "default": { "$type": "color", "$value": "{semantic.color.danger.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-danger-text-default" } } }
+        },
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.danger.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-outline-danger-border-default" } } }
+        }
+      },
+      "size": {
+        "$description": "按钮高度（固定行高，无垂直内边距）",
+        "mini":    { "$type": "dimension", "$value": "{semantic.size.component.mini}",    "$description": "Mini 24px",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-size-mini" } } },
+        "small":   { "$type": "dimension", "$value": "{semantic.size.component.small}",   "$description": "Small 28px",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-size-small" } } },
+        "default": { "$type": "dimension", "$value": "{semantic.size.component.default}", "$description": "Default 32px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-size-default" } } },
+        "large":   { "$type": "dimension", "$value": "{semantic.size.component.large}",   "$description": "Large 36px",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-size-large" } } }
+      },
+      "font": {
+        "$description": "各尺寸按钮的字体大小",
+        "size": {
+          "mini":    { "$type": "dimension", "$value": "{semantic.typography.size.xs}", "$description": "Mini 按钮字号 12px",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-font-size-mini" } } },
+          "small":   { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Small 按钮字号 14px",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-font-size-small" } } },
+          "default": { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Default 按钮字号 14px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-font-size-default" } } },
+          "large":   { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Large 按钮字号 14px",   "$extensions": { "com.arco.design": { "cssVar": "--comp-button-font-size-large" } } }
+        }
+      },
+      "padding": {
+        "$description": "各尺寸按钮的内边距（高度由 size 控制）",
+        "h": {
+          "mini":    { "$type": "dimension", "$value": "7px",  "$description": "Mini 水平内边距 7px",    "$extensions": { "com.arco.design": { "cssVar": "--comp-button-padding-h-mini" } } },
+          "small":   { "$type": "dimension", "$value": "11px", "$description": "Small 水平内边距 11px",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-padding-h-small" } } },
+          "default": { "$type": "dimension", "$value": "15px", "$description": "Default 水平内边距 15px","$extensions": { "com.arco.design": { "cssVar": "--comp-button-padding-h-default" } } },
+          "large":   { "$type": "dimension", "$value": "19px", "$description": "Large 水平内边距 19px",  "$extensions": { "com.arco.design": { "cssVar": "--comp-button-padding-h-large" } } }
+        },
+        "v": { "$type": "dimension", "$value": "0px", "$description": "垂直内边距（高度由 size 固定）", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-padding-v" } } }
+      },
+      "icon": {
+        "$description": "按钮内图标与文字的间距",
+        "gap": {
+          "mini":    { "$type": "dimension", "$value": "4px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-icon-gap-mini" } } },
+          "small":   { "$type": "dimension", "$value": "4px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-icon-gap-small" } } },
+          "default": { "$type": "dimension", "$value": "8px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-icon-gap-default" } } },
+          "large":   { "$type": "dimension", "$value": "8px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-icon-gap-large" } } }
+        }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.sm}", "$description": "按钮圆角 4px", "$extensions": { "com.arco.design": { "cssVar": "--comp-button-radius-default" } } }
+      }
+    }
+  }
+}

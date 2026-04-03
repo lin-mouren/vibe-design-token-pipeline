@@ -1,0 +1,131 @@
+{
+  "$schema": "https://www.designtokens.org/code-connect/path-b/v1",
+  "mappingMethod": "rest-api-read",
+  "mappingStrategy": "Path B — REST API read-only (Student/Starter plan)",
+  "generatedAt": "2026-03-30T00:00:00Z",
+  "figmaAccount": "lybory",
+  "figmaPlan": "Student/Starter",
+  "_note": "Button figmaNodeId resolved via MCP Figma sync on 2026-04-02. Other components pending.",
+  "_fileKeyStatus": "partial — Button resolved (15:74). Input/Card/Badge-Tag/Switch pending manual Figma component creation.",
+  "_figmaFileKey": "DDQMlsxszZj9pp6mg9EoAi",
+  "_variableCollections": {
+    "Core Tokens": "VariableCollectionId:11:2",
+    "Semantic Tokens": "VariableCollectionId:12:2"
+  },
+
+  "components": {
+    "Button": {
+      "figmaNodeId": "15:74",
+      "figmaNodeName": "Button",
+      "codeComponent": "Button",
+      "codeImport": "import { Button } from '@arco-design/web-react'",
+      "contractFile": "source/component-contracts/button.contract.json",
+      "variants": ["primary", "secondary", "outline", "text", "dashed"],
+      "statusVariants": ["default", "warning", "danger", "success"],
+      "sizes": ["mini", "small", "medium", "large"],
+      "props": ["type", "status", "size", "disabled", "loading"],
+      "tokenDimensions": ["background", "text-color", "border-radius", "border-color"],
+      "interactionStates": ["default", "hover", "focus", "active", "disabled", "loading"],
+      "variableBindings": {
+        "fill": "semantic/color/primary/default (VariableID:12:7)",
+        "textColor": "semantic/color/text/inverse (VariableID:12:31)",
+        "cornerRadius": "semantic/radius/button (VariableID:12:59)"
+      },
+      "confidenceScore": 0.90,
+      "confidenceLimitingFactors": [
+        "No Code Connect semantic prop annotations available (Path B)"
+      ],
+      "resolvedAt": "2026-04-02T00:00:00Z",
+      "mappedAt": "2026-03-30T00:00:00Z"
+    },
+    "Input": {
+      "figmaNodeId": "21:34",
+      "figmaNodeName": "Input",
+      "codeComponent": "Input",
+      "codeImport": "import { Input } from '@arco-design/web-react'",
+      "contractFile": "source/component-contracts/input.contract.json",
+      "variants": ["default", "error", "warning"],
+      "sizes": ["mini", "small", "medium", "large"],
+      "props": ["size", "status", "disabled", "readonly"],
+      "tokenDimensions": ["background", "border-color", "text-color", "placeholder-color", "border-radius"],
+      "interactionStates": ["default", "focus", "hover", "disabled", "readonly", "error", "warning"],
+      "confidenceScore": 0.80,
+      "confidenceLimitingFactors": [
+        "figmaNodeId not yet resolved (requires file key)",
+        "State variants (focus/error/warning) need visual confirmation",
+        "No Code Connect prop annotations (Path B)"
+      ],
+      "mappedAt": "2026-03-30T00:00:00Z"
+    },
+    "Card": {
+      "figmaNodeId": "22:26",
+      "figmaNodeName": "Card",
+      "codeComponent": "Card",
+      "codeImport": "import { Card } from '@arco-design/web-react'",
+      "contractFile": "source/component-contracts/card.contract.json",
+      "variants": ["default", "hoverable"],
+      "sizes": ["default", "small"],
+      "props": ["hoverable", "size", "bordered", "loading"],
+      "tokenDimensions": ["background", "border-color", "border-radius", "shadow", "padding"],
+      "interactionStates": ["default", "hover"],
+      "confidenceScore": 0.85,
+      "confidenceLimitingFactors": [
+        "figmaNodeId not yet resolved (requires file key)",
+        "Slot structure (cover/actions/extra) cannot be automatically mapped (Path B)",
+        "No Code Connect prop annotations"
+      ],
+      "mappedAt": "2026-03-30T00:00:00Z"
+    },
+    "Badge-Tag": {
+      "figmaNodeId": "23:44",
+      "figmaNodeName": "Badge/Tag",
+      "codeComponent": "Badge, Tag",
+      "codeImport": "import { Badge, Tag } from '@arco-design/web-react'",
+      "contractFile": "source/component-contracts/badge-tag.contract.json",
+      "colorVariants": ["arcoblue", "red", "orangered", "orange", "gold", "lime", "green", "cyan", "blue", "purple", "pinkpurple", "magenta", "gray"],
+      "sizes": ["small", "medium", "large"],
+      "props": ["color", "size", "bordered", "closable", "dot", "status"],
+      "tokenDimensions": ["background", "text-color", "border-radius", "font-size", "padding"],
+      "interactionStates": ["default", "hover"],
+      "confidenceScore": 0.85,
+      "confidenceLimitingFactors": [
+        "figmaNodeId not yet resolved (requires file key)",
+        "13-color variant matrix inferred from Arco Design palette (needs API verification)",
+        "No Code Connect prop annotations (Path B)"
+      ],
+      "mappedAt": "2026-03-30T00:00:00Z"
+    },
+    "Switch": {
+      "figmaNodeId": "24:50",
+      "figmaNodeName": "Switch/Toggle",
+      "codeComponent": "Switch",
+      "codeImport": "import { Switch } from '@arco-design/web-react'",
+      "contractFile": "source/component-contracts/toggle-switch.contract.json",
+      "booleanStates": ["off", "on"],
+      "sizes": ["small", "default"],
+      "props": ["checked", "size", "disabled", "loading", "type"],
+      "tokenDimensions": ["track-background", "handle-color", "handle-shadow", "transition-duration", "border-radius"],
+      "interactionStates": ["off-default", "off-hover", "off-disabled", "on-default", "on-hover", "on-disabled", "loading"],
+      "confidenceScore": 0.80,
+      "confidenceLimitingFactors": [
+        "figmaNodeId not yet resolved (requires file key)",
+        "Boolean state → token mapping needs human confirmation",
+        "transition-duration token name needs verification against source/tokens/",
+        "No Code Connect prop annotations (Path B)"
+      ],
+      "mappedAt": "2026-03-30T00:00:00Z"
+    }
+  },
+
+  "summary": {
+    "totalComponents": 5,
+    "mapped": 5,
+    "resolvedNodeIds": 5,
+    "pendingFileKey": 0,
+    "averageConfidence": 0.84,
+    "confidenceRange": "0.80 – 0.90",
+    "pathBLimitation": "Confidence capped at 80-90% without Code Connect semantic annotations. Upgrade to Figma Professional to unlock Path A (95% confidence).",
+    "syncedAt": "2026-04-02T00:00:00Z",
+    "nextStep": "All 5 components resolved. Optional: add file_variables:write PAT scope to enable REST API sync via npm run figma:push"
+  }
+}

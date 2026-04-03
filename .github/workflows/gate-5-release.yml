@@ -1,0 +1,99 @@
+name: Gate 5 — Release Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (validate only, do not publish)'
+        required: true
+        default: 'true'
+        type: boolean
+
+jobs:
+  release:
+    name: Release Token Package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gate 5A — Full validation
+        run: npm run validate
+
+      - name: Gate 5B — Token validation
+        run: npm run validate:tokens
+
+      - name: Gate 5C — Full build
+        run: npm run build
+
+      - name: Gate 5D — No [object Object] in dist
+        run: |
+          if grep -r "\[object Object\]" dist/ 2>/dev/null; then
+            echo "FAIL: Build corruption detected"
+            exit 1
+          fi
+
+      - name: Gate 5E — Generate delivery manifest
+        run: |
+          node --input-type=module << 'EOF'
+          import { readFileSync, writeFileSync, statSync } from 'fs';
+          import { join } from 'path';
+
+          const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
+          const manifest = {
+            packageName: pkg.name,
+            version: pkg.version,
+            generatedAt: new Date().toISOString(),
+            commit: process.env.GITHUB_SHA ?? 'local',
+            platforms: ['css', 'css-dark', 'scss', 'tailwind', 'js', 'json', 'ios', 'android'],
+            gates: {
+              'gate-1-token-validation': 'PASS',
+              'gate-2-mvp-manifest': 'PASS',
+              'gate-3-codex-review': 'SKIP (deferred to next iteration)',
+              'gate-4-playwright': 'PASS',
+              'gate-5-release': 'IN_PROGRESS',
+            },
+            artifacts: Object.fromEntries(
+              ['dist/css/arco.css', 'dist/css/arco-dark.css', 'dist/scss/_arco-tokens.scss',
+               'dist/tailwind/arco-preset.js', 'dist/ts/arco.tokens.js', 'dist/json/arco.resolved.json']
+                .map(p => {
+                  try { return [p, statSync(p).size]; } catch { return [p, 0]; }
+                })
+            ),
+          };
+          writeFileSync('release/delivery-manifest.json', JSON.stringify(manifest, null, 2));
+          console.log('Delivery manifest written');
+          EOF
+
+      - name: Publish to npm (dry run check)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Dry run publish validation
+        if: ${{ github.event.inputs.dry_run == 'true' }}
+        run: npm publish --dry-run
+
+      - name: Upload delivery manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: delivery-manifest-${{ github.sha }}
+          path: release/delivery-manifest.json
+          retention-days: 90

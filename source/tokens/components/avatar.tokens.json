@@ -1,0 +1,26 @@
+{
+  "comp": {
+    "avatar": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.primary.default}", "$description": "Avatar default background", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-bg-default" } } }
+      },
+      "text": {
+        "default": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$description": "Avatar text color", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-text-default" } } }
+      },
+      "size": {
+        "mini":    { "$type": "dimension", "$value": "{semantic.size.avatar.mini}", "$description": "Mini 24px", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-size-mini" } } },
+        "small":   { "$type": "dimension", "$value": "{semantic.size.avatar.small}", "$description": "Small 28px", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-size-small" } } },
+        "default": { "$type": "dimension", "$value": "{semantic.size.avatar.default}", "$description": "Default 32px", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-size-default" } } },
+        "large":   { "$type": "dimension", "$value": "{semantic.size.avatar.large}", "$description": "Large 40px", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-size-large" } } },
+        "xlarge":  { "$type": "dimension", "$value": "{semantic.size.avatar.xlarge}", "$description": "XLarge 64px", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-size-xlarge" } } }
+      },
+      "radius": {
+        "circle": { "$type": "dimension", "$value": "{semantic.radius.full}", "$description": "Circle avatar", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-radius-circle" } } },
+        "square": { "$type": "dimension", "$value": "{semantic.radius.sm}", "$description": "Square avatar (4px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-radius-square" } } }
+      },
+      "border": {
+        "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Avatar group border", "$extensions": { "com.arco.design": { "cssVar": "--comp-avatar-border-default" } } }
+      }
+    }
+  }
+}

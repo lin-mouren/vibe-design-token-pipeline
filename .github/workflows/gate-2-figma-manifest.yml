@@ -1,0 +1,65 @@
+name: Gate 2-MVP — Figma Code Map Manifest
+
+on:
+  push:
+    paths:
+      - 'source/component-contracts/**'
+      - 'figma-code-map.json'
+  pull_request:
+    paths:
+      - 'source/component-contracts/**'
+      - 'figma-code-map.json'
+
+jobs:
+  manifest-check:
+    name: Figma Code Map Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate 2A — All contracts have manifest entries
+        run: |
+          CONTRACT_COUNT=$(ls source/component-contracts/*.contract.json 2>/dev/null | wc -l)
+          MANIFEST_COUNT=$(node -e "
+            import { readFileSync } from 'fs';
+            const m = JSON.parse(readFileSync('figma-code-map.json', 'utf8'));
+            console.log(m.components.length);
+          " 2>/dev/null || echo "0")
+
+          echo "Contracts: $CONTRACT_COUNT | Manifest entries: $MANIFEST_COUNT"
+
+          if [ "$CONTRACT_COUNT" != "$MANIFEST_COUNT" ]; then
+            echo "FAIL: Contract count ($CONTRACT_COUNT) does not match manifest entries ($MANIFEST_COUNT)"
+            echo "Every *.contract.json must have a corresponding entry in figma-code-map.json"
+            exit 1
+          fi
+          echo "PASS: $CONTRACT_COUNT contracts, $MANIFEST_COUNT manifest entries"
+
+      - name: Gate 2B — No disconnected components (connected: false)
+        run: |
+          DISCONNECTED=$(node -e "
+            import { readFileSync } from 'fs';
+            const m = JSON.parse(readFileSync('figma-code-map.json', 'utf8'));
+            const d = m.components.filter(c => c.connected === false);
+            console.log(d.length);
+            if (d.length > 0) console.error('Disconnected:', d.map(c => c.figmaName).join(', '));
+          " 2>/dev/null || echo "1")
+
+          if [ "$DISCONNECTED" != "0" ]; then
+            echo "FAIL: $DISCONNECTED component(s) have connected: false in figma-code-map.json"
+            exit 1
+          fi
+          echo "PASS: All components connected"
+
+      - name: Gate 2C — Confidence scores above threshold (0.70)
+        run: |
+          node --input-type=module << 'EOF'
+          import { readFileSync } from 'fs';
+          const m = JSON.parse(readFileSync('figma-code-map.json', 'utf8'));
+          const failing = m.components.filter(c => c.confidenceScore < 0.70);
+          if (failing.length > 0) {
+            console.error('FAIL: Components below 0.70 confidence:', failing.map(c => `${c.figmaName}(${c.confidenceScore})`).join(', '));
+            process.exit(1);
+          }
+          console.log(`PASS: All ${m.components.length} components at confidence >= 0.70 (avg: ${m.summary.averageConfidence})`);
+          EOF

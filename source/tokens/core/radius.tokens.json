@@ -1,0 +1,42 @@
+{
+  "core": {
+    "radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0",
+        "$description": "No rounding",
+        "$extensions": { "com.arco.design": { "tokenName": "border-radius-none", "cssVar": "--core-radius-none" } }
+      },
+      "small": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Small rounding – Tags, Badges",
+        "$extensions": { "com.arco.design": { "tokenName": "border-radius-small", "cssVar": "--core-radius-small" } }
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Medium rounding – Buttons, Inputs",
+        "$extensions": { "com.arco.design": { "tokenName": "border-radius-medium", "cssVar": "--core-radius-medium" } }
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Large rounding – Cards, Modals",
+        "$extensions": { "com.arco.design": { "tokenName": "border-radius-large", "cssVar": "--core-radius-large" } }
+      },
+      "xlarge": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "XLarge rounding – prominent containers",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-radius-xlarge" } }
+      },
+      "circle": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$description": "Full pill / circle rounding",
+        "$extensions": { "com.arco.design": { "tokenName": "border-radius-circle", "cssVar": "--core-radius-circle" } }
+      }
+    }
+  }
+}

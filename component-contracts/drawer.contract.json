@@ -1,0 +1,77 @@
+{
+  "componentName": "Drawer",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 9,
+  "tokens": [
+    {
+      "tokenPath": "comp.drawer.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.overlay.color",
+      "semanticAlias": "semantic.color.mask.bg",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.shadow.default",
+      "semanticAlias": "core.shadow.level3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.title.font.size",
+      "semanticAlias": "core.text.size.16",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.title.font.weight",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.width.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.padding.default",
+      "semanticAlias": "core.space.5",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.header.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.drawer.zindex.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.drawer.shadow.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.shadow.level3}"
+    },
+    {
+      "tokenPath": "comp.drawer.title.font.size",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.16}"
+    },
+    {
+      "tokenPath": "comp.drawer.width.default",
+      "violationType": "raw-value",
+      "value": "378px"
+    },
+    {
+      "tokenPath": "comp.drawer.padding.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.5}"
+    }
+  ]
+}

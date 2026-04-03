@@ -1,0 +1,19 @@
+{
+  "comp": {
+    "icon": {
+      "size": {
+        "12": { "$type": "dimension", "$value": "{semantic.size.icon.12}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-12" } } },
+        "14": { "$type": "dimension", "$value": "{semantic.size.icon.14}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-14" } } },
+        "16": { "$type": "dimension", "$value": "{semantic.size.icon.16}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-16" } } },
+        "18": { "$type": "dimension", "$value": "{semantic.size.icon.18}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-18" } } },
+        "20": { "$type": "dimension", "$value": "{semantic.size.icon.20}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-20" } } },
+        "24": { "$type": "dimension", "$value": "{semantic.size.icon.24}", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-size-24" } } }
+      },
+      "color": {
+        "default":  { "$type": "color", "$value": "{semantic.color.text.tertiary}", "$description": "Default icon color", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-color-default" } } },
+        "active":   { "$type": "color", "$value": "{semantic.color.primary.default}", "$description": "Active/selected icon", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-color-active" } } },
+        "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}", "$description": "Disabled icon", "$extensions": { "com.arco.design": { "cssVar": "--comp-icon-color-disabled" } } }
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "componentName": "Button",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 81,
+  "tokens": [
+    {
+      "tokenPath": "comp.button.primary.bg.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.bg.hover",
+      "semanticAlias": "semantic.color.primary.hover",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.bg.active",
+      "semanticAlias": "semantic.color.primary.active",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.bg.disabled",
+      "semanticAlias": "semantic.color.primary.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.text.default",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.text.disabled",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.primary.border.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.bg.default",
+      "semanticAlias": "semantic.color.secondary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.bg.hover",
+      "semanticAlias": "semantic.color.secondary.hover",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.bg.active",
+      "semanticAlias": "semantic.color.secondary.active",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.bg.disabled",
+      "semanticAlias": "semantic.color.secondary.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.text.default",
+      "semanticAlias": "semantic.color.text.primary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.text.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.secondary.border.disabled",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.bg.hover",
+      "semanticAlias": "semantic.color.primary.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.bg.active",
+      "semanticAlias": "semantic.color.primary.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.bg.disabled",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.text.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.text.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.border.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline.border.disabled",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.bg.hover",
+      "semanticAlias": "semantic.color.primary.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.bg.disabled",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.text.default",
+      "semanticAlias": "semantic.color.text.primary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.text.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.dashed.border.disabled",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.text.bg.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.text.bg.hover",
+      "semanticAlias": "semantic.color.surface.3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.text.bg.disabled",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.text.text.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.text.text.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.bg.default",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.bg.hover",
+      "semanticAlias": "semantic.color.danger.hover",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.bg.active",
+      "semanticAlias": "semantic.color.danger.active",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.bg.disabled",
+      "semanticAlias": "semantic.color.danger.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.text.default",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.text.disabled",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.border.default",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.danger.border.disabled",
+      "semanticAlias": "semantic.color.danger.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.bg.default",
+      "semanticAlias": "semantic.color.warning.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.bg.hover",
+      "semanticAlias": "semantic.color.warning.hover",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.bg.active",
+      "semanticAlias": "semantic.color.warning.active",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.bg.disabled",
+      "semanticAlias": "semantic.color.warning.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.text.default",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.text.disabled",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.border.default",
+      "semanticAlias": "semantic.color.warning.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.warning.border.disabled",
+      "semanticAlias": "semantic.color.warning.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.bg.default",
+      "semanticAlias": "semantic.color.success.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.bg.hover",
+      "semanticAlias": "semantic.color.success.hover",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.bg.active",
+      "semanticAlias": "semantic.color.success.active",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.bg.disabled",
+      "semanticAlias": "semantic.color.success.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.text.default",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.text.disabled",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.border.default",
+      "semanticAlias": "semantic.color.success.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.success.border.disabled",
+      "semanticAlias": "semantic.color.success.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline-danger.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline-danger.bg.hover",
+      "semanticAlias": "semantic.color.danger.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline-danger.text.default",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.outline-danger.border.default",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.size.mini",
+      "semanticAlias": "core.size.component.mini",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.size.small",
+      "semanticAlias": "core.size.component.small",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.size.default",
+      "semanticAlias": "core.size.component.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.size.large",
+      "semanticAlias": "core.size.component.large",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.font.size.mini",
+      "semanticAlias": "core.text.size.12",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.font.size.small",
+      "semanticAlias": "core.text.size.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.font.size.default",
+      "semanticAlias": "core.text.size.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.font.size.large",
+      "semanticAlias": "core.text.size.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.padding.h.mini",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.padding.h.small",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.padding.h.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.padding.h.large",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.padding.v",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.mini",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.small",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.large",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.button.radius.default",
+      "semanticAlias": "core.radius.medium",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.button.size.mini",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.component.mini}"
+    },
+    {
+      "tokenPath": "comp.button.size.small",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.component.small}"
+    },
+    {
+      "tokenPath": "comp.button.size.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.component.default}"
+    },
+    {
+      "tokenPath": "comp.button.size.large",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.component.large}"
+    },
+    {
+      "tokenPath": "comp.button.font.size.mini",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.12}"
+    },
+    {
+      "tokenPath": "comp.button.font.size.small",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.14}"
+    },
+    {
+      "tokenPath": "comp.button.font.size.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.14}"
+    },
+    {
+      "tokenPath": "comp.button.font.size.large",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.14}"
+    },
+    {
+      "tokenPath": "comp.button.padding.h.mini",
+      "violationType": "raw-value",
+      "value": "7px"
+    },
+    {
+      "tokenPath": "comp.button.padding.h.small",
+      "violationType": "raw-value",
+      "value": "11px"
+    },
+    {
+      "tokenPath": "comp.button.padding.h.default",
+      "violationType": "raw-value",
+      "value": "15px"
+    },
+    {
+      "tokenPath": "comp.button.padding.h.large",
+      "violationType": "raw-value",
+      "value": "19px"
+    },
+    {
+      "tokenPath": "comp.button.padding.v",
+      "violationType": "raw-value",
+      "value": "0px"
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.mini",
+      "violationType": "raw-value",
+      "value": "4px"
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.small",
+      "violationType": "raw-value",
+      "value": "4px"
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.default",
+      "violationType": "raw-value",
+      "value": "8px"
+    },
+    {
+      "tokenPath": "comp.button.icon.gap.large",
+      "violationType": "raw-value",
+      "value": "8px"
+    },
+    {
+      "tokenPath": "comp.button.radius.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.medium}"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "comp": {
+    "form": {
+      "label": {
+        "color": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.primary}", "$description": "Form label color", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-label-color-default" } } },
+          "required": { "$type": "color", "$value": "{semantic.color.danger.default}", "$description": "Required field asterisk", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-label-color-required" } } }
+        },
+        "font": {
+          "size": { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Form label font size 14px", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-label-font-size" } } }
+        }
+      },
+      "help": {
+        "color": {
+          "default": { "$type": "color", "$value": "{semantic.color.text.tertiary}", "$description": "Help/hint text", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-help-color-default" } } },
+          "error":   { "$type": "color", "$value": "{semantic.color.danger.default}", "$description": "Error help text", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-help-color-error" } } }
+        },
+        "font": {
+          "size": { "$type": "dimension", "$value": "{semantic.typography.size.xs}", "$description": "Help text font size 12px", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-help-font-size" } } }
+        }
+      },
+      "item": {
+        "gap": { "$type": "dimension", "$value": "{semantic.spacing.lg}", "$description": "Form item vertical gap (24px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-form-item-gap" } } }
+      }
+    }
+  }
+}

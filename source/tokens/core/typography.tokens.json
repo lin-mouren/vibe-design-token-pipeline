@@ -1,0 +1,40 @@
+{
+  "core": {
+    "text": {
+      "family": {
+        "sans": {
+          "$type": "fontFamily",
+          "$value": "-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          "$description": "Default sans-serif stack",
+          "$extensions": { "com.arco.design": { "tokenName": "font-family", "cssVar": "--core-text-family-sans" } }
+        },
+        "mono": {
+          "$type": "fontFamily",
+          "$value": "'Consolas', 'SFMono-Regular', 'Liberation Mono', 'Menlo', monospace",
+          "$description": "Monospace stack for code",
+          "$extensions": { "com.arco.design": { "tokenName": "font-family-mono", "cssVar": "--core-text-family-mono" } }
+        }
+      },
+      "size": {
+        "12": { "$type": "dimension", "$value": "12px", "$description": "XS – captions, badges", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-12" } } },
+        "13": { "$type": "dimension", "$value": "13px", "$description": "SM – compact body", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-13" } } },
+        "14": { "$type": "dimension", "$value": "14px", "$description": "Base body text", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-14" } } },
+        "16": { "$type": "dimension", "$value": "16px", "$description": "LG – subheading", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-16" } } },
+        "18": { "$type": "dimension", "$value": "18px", "$description": "XL – heading 3", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-18" } } },
+        "20": { "$type": "dimension", "$value": "20px", "$description": "2XL – heading 2", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-20" } } },
+        "24": { "$type": "dimension", "$value": "24px", "$description": "3XL – heading 1", "$extensions": { "com.arco.design": { "cssVar": "--core-text-size-24" } } }
+      },
+      "weight": {
+        "400": { "$type": "fontWeight", "$value": 400, "$description": "Regular", "$extensions": { "com.arco.design": { "cssVar": "--core-text-weight-400" } } },
+        "500": { "$type": "fontWeight", "$value": 500, "$description": "Medium", "$extensions": { "com.arco.design": { "cssVar": "--core-text-weight-500" } } },
+        "600": { "$type": "fontWeight", "$value": 600, "$description": "SemiBold", "$extensions": { "com.arco.design": { "cssVar": "--core-text-weight-600" } } },
+        "700": { "$type": "fontWeight", "$value": 700, "$description": "Bold", "$extensions": { "com.arco.design": { "cssVar": "--core-text-weight-700" } } }
+      },
+      "lineheight": {
+        "tight": { "$type": "number", "$value": 1.4, "$description": "Tight – heading line height", "$extensions": { "com.arco.design": { "cssVar": "--core-text-lineheight-tight" } } },
+        "base": { "$type": "number", "$value": 1.5715, "$description": "Base – body text line height", "$extensions": { "com.arco.design": { "cssVar": "--core-text-lineheight-base" } } },
+        "relaxed": { "$type": "number", "$value": 1.75, "$description": "Relaxed – long-form reading", "$extensions": { "com.arco.design": { "cssVar": "--core-text-lineheight-relaxed" } } }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "comp": {
+    "image": {
+      "aspect": {
+        "$description": "图片标准宽高比预设（CSS aspect-ratio 无单位数值，width/height）",
+        "square":  { "$type": "number", "$value": 1,      "$description": "1:1 正方形，适用于头像/产品缩略图", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-square" } } },
+        "4-3":     { "$type": "number", "$value": 1.3333, "$description": "4:3 横版，通用图片/卡片封面", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-4-3" } } },
+        "3-2":     { "$type": "number", "$value": 1.5,    "$description": "3:2 照片横版，相机标准比例", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-3-2" } } },
+        "16-9":    { "$type": "number", "$value": 1.7778, "$description": "16:9 宽屏，视频封面/Banner", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-16-9" } } },
+        "21-9":    { "$type": "number", "$value": 2.3333, "$description": "21:9 超宽屏，英雄区 Banner", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-21-9" } } },
+        "3-4":     { "$type": "number", "$value": 0.75,   "$description": "3:4 竖版，手机照片/海报", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-3-4" } } },
+        "9-16":    { "$type": "number", "$value": 0.5625, "$description": "9:16 全屏竖版，短视频封面", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-aspect-9-16" } } }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.sm}", "$description": "图片圆角 (4px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-radius-default" } } }
+      },
+      "overlay": {
+        "color": { "$type": "color", "$value": "{semantic.color.overlay.image}", "$description": "图片悬停遮罩颜色", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-overlay-color" } } }
+      },
+      "placeholder": {
+        "bg":    { "$type": "color", "$value": "{semantic.color.surface.3}", "$description": "加载占位背景色", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-placeholder-bg" } } },
+        "color": { "$type": "color", "$value": "{semantic.color.text.tertiary}", "$description": "加载占位图标颜色", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-placeholder-color" } } }
+      },
+      "border": {
+        "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "图片描边颜色", "$extensions": { "com.arco.design": { "cssVar": "--comp-image-border-default" } } }
+      }
+    }
+  }
+}

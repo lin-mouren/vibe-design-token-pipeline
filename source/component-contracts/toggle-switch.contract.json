@@ -1,0 +1,159 @@
+{
+  "$schema": "https://www.designtokens.org/component-contract/v1",
+  "component": "Switch",
+  "figmaNodeName": "Switch/Toggle",
+  "status": "medium-confidence",
+  "note": "Validates boolean state mapping, transition duration token, and interactive feedback. Switch is the Arco Design toggle component (also called Toggle in Figma).",
+  "codePackage": "@arco-design/web-react",
+  "codeImport": "import { Switch } from '@arco-design/web-react'",
+
+  "variants": {
+    "checked": {
+      "values": [true, false],
+      "default": false,
+      "description": "Boolean on/off state"
+    },
+    "size": {
+      "values": ["small", "default"],
+      "default": "default",
+      "description": "Track size scale"
+    },
+    "disabled": {
+      "values": [true, false],
+      "default": false
+    },
+    "loading": {
+      "values": [true, false],
+      "default": false
+    },
+    "type": {
+      "values": ["circle", "round", "line"],
+      "default": "circle",
+      "description": "Switch track/handle visual style"
+    }
+  },
+
+  "slots": {
+    "checkedIcon": {
+      "description": "Icon shown inside handle when checked",
+      "required": false
+    },
+    "uncheckedIcon": {
+      "description": "Icon shown inside handle when unchecked",
+      "required": false
+    },
+    "checkedText": {
+      "description": "Text label on track when checked",
+      "required": false
+    },
+    "uncheckedText": {
+      "description": "Text label on track when unchecked",
+      "required": false
+    }
+  },
+
+  "tokenBindings": {
+    "track-background-off": {
+      "token": "color.bg.4",
+      "property": "background-color",
+      "applyWhen": { "checked": false, "disabled": false },
+      "resolvedCssVar": "--color-bg-4",
+      "confidence": "medium"
+    },
+    "track-background-on": {
+      "token": "color.primary.6",
+      "property": "background-color",
+      "applyWhen": { "checked": true, "disabled": false },
+      "resolvedCssVar": "--primary-6",
+      "confidence": "high"
+    },
+    "track-background-disabled-off": {
+      "token": "color.bg.3",
+      "property": "background-color",
+      "applyWhen": { "checked": false, "disabled": true },
+      "resolvedCssVar": "--color-bg-3",
+      "confidence": "medium"
+    },
+    "track-background-disabled-on": {
+      "token": "color.primary.3",
+      "property": "background-color",
+      "applyWhen": { "checked": true, "disabled": true },
+      "resolvedCssVar": "--primary-3",
+      "confidence": "medium"
+    },
+    "handle-color": {
+      "token": "color.white",
+      "property": "background-color",
+      "applyWhen": {},
+      "resolvedCssVar": "--color-white",
+      "confidence": "high",
+      "note": "Handle is always white regardless of checked state"
+    },
+    "handle-shadow": {
+      "token": "shadow.special",
+      "property": "box-shadow",
+      "applyWhen": {},
+      "confidence": "medium",
+      "note": "Subtle outline shadow on handle: rgba(0,0,0,0.3) 0px 0px 1px 0px"
+    },
+    "transition-duration": {
+      "token": "duration.2",
+      "property": "transition-duration",
+      "applyWhen": {},
+      "resolvedCssVar": "--motion-duration-2",
+      "confidence": "medium",
+      "note": "Validates that transition animations reference a duration token, not a magic number"
+    },
+    "focus-ring": {
+      "token": "color.primary.3",
+      "property": "outline-color",
+      "applyWhen": { "state": "focus" },
+      "resolvedCssVar": "--primary-3",
+      "confidence": "low"
+    },
+    "track-radius": {
+      "token": "border-radius.circle",
+      "property": "border-radius",
+      "applyWhen": { "type": "circle" },
+      "resolvedCssVar": "--border-radius-circle",
+      "confidence": "high"
+    }
+  },
+
+  "interactionStates": ["off-default", "off-hover", "off-disabled", "on-default", "on-hover", "on-disabled", "loading"],
+
+  "booleanStateMapping": {
+    "off": { "checked": false },
+    "on": { "checked": true },
+    "note": "Boolean state must map to token path (off→color.bg.4, on→color.primary.6). Manual confirmation required per SD_V5_RISK_REGISTER.md note on boolean state mapping."
+  },
+
+  "figmaVariantMapping": {
+    "State=Off": { "checked": false },
+    "State=On": { "checked": true },
+    "State=Off/Disabled": { "checked": false, "disabled": true },
+    "State=On/Disabled": { "checked": true, "disabled": true },
+    "State=Loading": { "loading": true },
+    "Size=Small": { "size": "small" },
+    "Size=Default": { "size": "default" },
+    "Type=Circle": { "type": "circle" },
+    "Type=Round": { "type": "round" },
+    "Type=Line": { "type": "line" }
+  },
+
+  "evidence": {
+    "confidence": "medium",
+    "sources": [
+      "arco-design GitHub source (Switch component styles)",
+      "Arco Design CSS variable reference (https://arco.design/react/docs/token)",
+      "Shadow token from source/tokens/core/shadow.tokens.json (shadow.special)"
+    ],
+    "extractedBy": "com.anthropic.dtcg-skill",
+    "lastVerified": "2026-03-30",
+    "gaps": [
+      "Transition duration token name (duration.2) needs verification against source/tokens/",
+      "Boolean state → token mapping needs human confirmation per plan",
+      "line/round type visual style token differences not captured"
+    ]
+  }
+}

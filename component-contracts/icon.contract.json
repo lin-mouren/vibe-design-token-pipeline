@@ -1,0 +1,87 @@
+{
+  "componentName": "Icon",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 9,
+  "tokens": [
+    {
+      "tokenPath": "comp.icon.size.12",
+      "semanticAlias": "core.size.icon.12",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.size.14",
+      "semanticAlias": "core.size.icon.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.size.16",
+      "semanticAlias": "core.size.icon.16",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.size.18",
+      "semanticAlias": "core.size.icon.18",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.size.20",
+      "semanticAlias": "core.size.icon.20",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.size.24",
+      "semanticAlias": "core.size.icon.24",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.color.default",
+      "semanticAlias": "semantic.color.text.tertiary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.color.active",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.icon.color.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.icon.size.12",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.12}"
+    },
+    {
+      "tokenPath": "comp.icon.size.14",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.14}"
+    },
+    {
+      "tokenPath": "comp.icon.size.16",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.16}"
+    },
+    {
+      "tokenPath": "comp.icon.size.18",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.18}"
+    },
+    {
+      "tokenPath": "comp.icon.size.20",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.20}"
+    },
+    {
+      "tokenPath": "comp.icon.size.24",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.icon.24}"
+    }
+  ]
+}

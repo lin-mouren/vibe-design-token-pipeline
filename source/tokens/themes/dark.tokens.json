@@ -1,0 +1,18 @@
+{
+  "text": {
+    "primary":   { "$type": "color", "$value": "rgba(255,255,255,0.9)", "$description": "Dark mode primary text", "$extensions": { "com.arco.design": { "tokenName": "color-text-1", "cssVar": "--color-text-1" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "secondary": { "$type": "color", "$value": "rgba(255,255,255,0.7)", "$extensions": { "com.arco.design": { "tokenName": "color-text-2", "cssVar": "--color-text-2" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "tertiary":  { "$type": "color", "$value": "rgba(255,255,255,0.5)", "$extensions": { "com.arco.design": { "tokenName": "color-text-3", "cssVar": "--color-text-3" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "disabled":  { "$type": "color", "$value": "rgba(255,255,255,0.3)", "$extensions": { "com.arco.design": { "tokenName": "color-text-4", "cssVar": "--color-text-4" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } }
+  },
+  "surface": {
+    "bg-1": { "$type": "color", "$value": "{core.color.dark.bg.1}", "$description": "Dark page bg", "$extensions": { "com.arco.design": { "tokenName": "color-bg-1" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "bg-2": { "$type": "color", "$value": "{core.color.dark.bg.2}", "$extensions": { "com.arco.design": { "tokenName": "color-bg-2" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "bg-3": { "$type": "color", "$value": "{core.color.dark.bg.3}", "$extensions": { "com.arco.design": { "tokenName": "color-bg-3" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "bg-4": { "$type": "color", "$value": "{core.color.dark.bg.4}", "$extensions": { "com.arco.design": { "tokenName": "color-bg-4" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+    "bg-5": { "$type": "color", "$value": "{core.color.dark.bg.5}", "$extensions": { "com.arco.design": { "tokenName": "color-bg-5" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } }
+  },
+  "border": {
+    "default": { "$type": "color", "$value": "{core.color.dark.border}", "$description": "Dark mode border", "$extensions": { "com.arco.design": { "tokenName": "color-border" }, "com.anthropic.dtcg-skill": { "theme": "dark" } } }
+  }
+}

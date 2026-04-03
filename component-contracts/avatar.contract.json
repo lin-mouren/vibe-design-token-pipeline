@@ -1,0 +1,97 @@
+{
+  "componentName": "Avatar",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 10,
+  "tokens": [
+    {
+      "tokenPath": "comp.avatar.bg.default",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.text.default",
+      "semanticAlias": "semantic.color.text.inverse",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.size.mini",
+      "semanticAlias": "core.size.avatar.mini",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.size.small",
+      "semanticAlias": "core.size.avatar.small",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.size.default",
+      "semanticAlias": "core.size.avatar.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.size.large",
+      "semanticAlias": "core.size.avatar.large",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.size.xlarge",
+      "semanticAlias": "core.size.avatar.xlarge",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.radius.circle",
+      "semanticAlias": "core.radius.circle",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.radius.square",
+      "semanticAlias": "core.radius.medium",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.avatar.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.avatar.size.mini",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.avatar.mini}"
+    },
+    {
+      "tokenPath": "comp.avatar.size.small",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.avatar.small}"
+    },
+    {
+      "tokenPath": "comp.avatar.size.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.avatar.default}"
+    },
+    {
+      "tokenPath": "comp.avatar.size.large",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.avatar.large}"
+    },
+    {
+      "tokenPath": "comp.avatar.size.xlarge",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.size.avatar.xlarge}"
+    },
+    {
+      "tokenPath": "comp.avatar.radius.circle",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.circle}"
+    },
+    {
+      "tokenPath": "comp.avatar.radius.square",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.medium}"
+    }
+  ]
+}

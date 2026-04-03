@@ -1,0 +1,19 @@
+{
+  "comp": {
+    "divider": {
+      "color": {
+        "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Divider line color", "$extensions": { "com.arco.design": { "cssVar": "--comp-divider-color-default" } } }
+      },
+      "thickness": {
+        "default": { "$type": "dimension", "$value": "1px", "$description": "Divider line thickness", "$extensions": { "com.arco.design": { "cssVar": "--comp-divider-thickness-default" } } }
+      },
+      "margin": {
+        "horizontal": { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Vertical divider margin (16px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-divider-margin-horizontal" } } },
+        "vertical":   { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Horizontal divider margin (16px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-divider-margin-vertical" } } }
+      },
+      "text": {
+        "color": { "$type": "color", "$value": "{semantic.color.text.tertiary}", "$description": "Divider label text color", "$extensions": { "com.arco.design": { "cssVar": "--comp-divider-text-color" } } }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "core": {
+    "shadow": {
+      "special": {
+        "$type": "shadow",
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "1px",
+          "spread": "0px",
+          "inset": false
+        },
+        "$description": "特殊阴影 – 极细微轮廓感，选中态轮廓",
+        "$extensions": { "com.arco.design": { "tokenName": "shadow-special", "cssVar": "--core-shadow-special" } }
+      },
+      "level1": {
+        "$type": "shadow",
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.1)",
+          "offsetX": "0px",
+          "offsetY": "-2px",
+          "blur": "5px",
+          "spread": "0px",
+          "inset": false
+        },
+        "$description": "阴影1 – 轻量层叠，dropdown, tooltip",
+        "$extensions": { "com.arco.design": { "tokenName": "shadow1-center", "cssVar": "--core-shadow-level1" } }
+      },
+      "level2": {
+        "$type": "shadow",
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.1)",
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": false
+        },
+        "$description": "阴影2 – 标准卡片阴影",
+        "$extensions": { "com.arco.design": { "tokenName": "shadow2-center", "cssVar": "--core-shadow-level2" } }
+      },
+      "level3": {
+        "$type": "shadow",
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.1)",
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "20px",
+          "spread": "0px",
+          "inset": false
+        },
+        "$description": "阴影3 – 深层浮层，Modal, Drawer",
+        "$extensions": { "com.arco.design": { "tokenName": "shadow3-center", "cssVar": "--core-shadow-level3" } }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "https://www.designtokens.org/component-contract/v1",
+  "component": "Card",
+  "figmaNodeName": "Card",
+  "status": "medium-confidence",
+  "note": "Token bindings derived from Arco Design CSS variable patterns and spec documentation. Validates compound spacing + elevation + border-radius token dimensions.",
+  "codePackage": "@arco-design/web-react",
+  "codeImport": "import { Card } from '@arco-design/web-react'",
+
+  "variants": {
+    "hoverable": {
+      "values": [true, false],
+      "default": false,
+      "description": "Enables hover lift shadow effect"
+    },
+    "size": {
+      "values": ["default", "small"],
+      "default": "default",
+      "description": "Controls internal padding scale"
+    },
+    "bordered": {
+      "values": [true, false],
+      "default": true,
+      "description": "Show/hide border ring"
+    },
+    "loading": {
+      "values": [true, false],
+      "default": false
+    }
+  },
+
+  "slots": {
+    "default": {
+      "description": "Card body content",
+      "required": false
+    },
+    "title": {
+      "description": "Card header title text",
+      "required": false
+    },
+    "extra": {
+      "description": "Card header extra action (top-right)",
+      "required": false
+    },
+    "cover": {
+      "description": "Cover image above the card body",
+      "required": false
+    },
+    "actions": {
+      "description": "Action buttons in card footer",
+      "required": false
+    }
+  },
+
+  "tokenBindings": {
+    "background": {
+      "token": "color.bg.2",
+      "property": "background-color",
+      "applyWhen": {},
+      "resolvedCssVar": "--color-bg-2",
+      "confidence": "high"
+    },
+    "border-color": {
+      "token": "border.2",
+      "property": "border-color",
+      "applyWhen": { "bordered": true },
+      "resolvedCssVar": "--color-border-2",
+      "confidence": "high"
+    },
+    "border-radius": {
+      "token": "border-radius.medium",
+      "property": "border-radius",
+      "applyWhen": {},
+      "resolvedCssVar": "--border-radius-medium",
+      "confidence": "high"
+    },
+    "shadow-default": {
+      "token": "shadow.level1",
+      "property": "box-shadow",
+      "applyWhen": { "hoverable": false },
+      "confidence": "medium",
+      "note": "Cards use level1 shadow by default (0px -2px 5px rgba(0,0,0,0.1))"
+    },
+    "shadow-hover": {
+      "token": "shadow.level2",
+      "property": "box-shadow",
+      "applyWhen": { "hoverable": true, "state": "hover" },
+      "confidence": "medium",
+      "note": "Hover state lifts to level2 shadow (0px 0px 10px rgba(0,0,0,0.1))"
+    },
+    "header-padding": {
+      "token": "spacing.16",
+      "property": "padding",
+      "applyWhen": { "size": "default" },
+      "resolvedCssVar": "--space-16",
+      "confidence": "medium"
+    },
+    "header-padding-small": {
+      "token": "spacing.12",
+      "property": "padding",
+      "applyWhen": { "size": "small" },
+      "resolvedCssVar": "--space-12",
+      "confidence": "medium"
+    },
+    "body-padding": {
+      "token": "spacing.16",
+      "property": "padding",
+      "applyWhen": { "size": "default" },
+      "resolvedCssVar": "--space-16",
+      "confidence": "medium"
+    },
+    "header-title-color": {
+      "token": "color.text.1",
+      "property": "color",
+      "applyWhen": {},
+      "resolvedCssVar": "--color-text-1",
+      "confidence": "high"
+    },
+    "divider-color": {
+      "token": "border.2",
+      "property": "border-color",
+      "applyWhen": {},
+      "resolvedCssVar": "--color-border-2",
+      "confidence": "high"
+    }
+  },
+
+  "interactionStates": ["default", "hover"],
+
+  "figmaVariantMapping": {
+    "Hoverable=True": { "hoverable": true },
+    "Hoverable=False": { "hoverable": false },
+    "Size=Default": { "size": "default" },
+    "Size=Small": { "size": "small" },
+    "Bordered=True": { "bordered": true },
+    "Bordered=False": { "bordered": false }
+  },
+
+  "evidence": {
+    "confidence": "medium",
+    "sources": [
+      "arco-design GitHub source (component styles)",
+      "Arco Design CSS variable reference (https://arco.design/react/docs/token)",
+      "Shadow token spec from source/tokens/core/shadow.tokens.json"
+    ],
+    "extractedBy": "com.anthropic.dtcg-skill",
+    "lastVerified": "2026-03-30",
+    "gaps": [
+      "Figma boundVariables audit not yet performed",
+      "Exact padding values for small size need CSS verification",
+      "Cover image token bindings (overlay, aspect-ratio) not yet captured"
+    ]
+  }
+}

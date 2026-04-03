@@ -1,0 +1,9 @@
+{
+  "semantic": {
+    "radius": {
+      "sm":   { "$type": "dimension", "$value": "{core.radius.medium}", "$description": "Default component border radius (4px) — inputs, tags, messages", "$extensions": { "com.arco.design": { "cssVar": "--semantic-radius-sm" } } },
+      "md":   { "$type": "dimension", "$value": "{core.radius.large}",  "$description": "Large component border radius (8px) — cards, modals, drawers", "$extensions": { "com.arco.design": { "cssVar": "--semantic-radius-md" } } },
+      "full": { "$type": "dimension", "$value": "{core.radius.circle}", "$description": "Full / pill border radius (9999px) — switches, pills, avatars", "$extensions": { "com.arco.design": { "cssVar": "--semantic-radius-full" } } }
+    }
+  }
+}

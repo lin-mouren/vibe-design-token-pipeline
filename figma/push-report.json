@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-04-02T00:00:00Z",
+  "direction": "push",
+  "dryRun": false,
+  "fileKey": "DDQMlsxszZj9pp6mg9EoAi",
+  "method": "figma-mcp-use_figma",
+  "collectionsWritten": 2,
+  "collectionNames": ["Core Tokens", "Semantic Tokens"],
+  "collectionIds": {
+    "Core Tokens": "VariableCollectionId:11:2",
+    "Semantic Tokens": "VariableCollectionId:12:2"
+  },
+  "modesWritten": 1,
+  "variablesWritten": 166,
+  "variablesSkipped": 51,
+  "skippedReason": "shadow/grid/typography STRING types skipped (use Figma Styles or CSS vars instead); self-referencing semantic aliases deferred",
+  "tokenCoverage": 0.765,
+  "componentSets": {
+    "Button": {
+      "nodeId": "15:74",
+      "variantCount": 36,
+      "variableBindings": ["fill:color", "text:color", "cornerRadius"],
+      "boundVariableCount": 60
+    }
+  },
+  "pushValid": true,
+  "errors": [],
+  "notes": "Correct workflow: DTCG source files → figma-mcp Plugin API. REST API (dtcg-to-figma.mjs) blocked by missing file_variables:write PAT scope."
+}

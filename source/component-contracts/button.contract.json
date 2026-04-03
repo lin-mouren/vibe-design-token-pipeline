@@ -1,0 +1,114 @@
+{
+  "$schema": "https://www.designtokens.org/component-contract/v1",
+  "component": "Button",
+  "figmaNodeName": "Button",
+  "status": "stable",
+  "codePackage": "@arco-design/web-react",
+  "codeImport": "import { Button } from '@arco-design/web-react'",
+
+  "variants": {
+    "type": {
+      "values": ["primary", "secondary", "outline", "text", "dashed"],
+      "default": "primary",
+      "description": "Visual style variant of the button"
+    },
+    "status": {
+      "values": ["default", "warning", "danger", "success"],
+      "default": "default",
+      "description": "Semantic status color"
+    },
+    "size": {
+      "values": ["mini", "small", "default", "large"],
+      "default": "default",
+      "description": "Button size scale"
+    },
+    "disabled": {
+      "values": [true, false],
+      "default": false
+    },
+    "loading": {
+      "values": [true, false],
+      "default": false
+    }
+  },
+
+  "slots": {
+    "default": {
+      "description": "Button label text or icon+text content",
+      "required": true
+    },
+    "icon": {
+      "description": "Leading icon slot (optional)",
+      "required": false
+    }
+  },
+
+  "tokenBindings": {
+    "background": {
+      "token": "button.primary.background",
+      "property": "background-color",
+      "applyWhen": { "type": "primary", "status": "default", "disabled": false }
+    },
+    "background-hover": {
+      "token": "button.primary.background-hover",
+      "property": "background-color",
+      "applyWhen": { "type": "primary", "state": "hover" }
+    },
+    "background-active": {
+      "token": "button.primary.background-active",
+      "property": "background-color",
+      "applyWhen": { "type": "primary", "state": "pressed" }
+    },
+    "text-color": {
+      "token": "button.primary.text",
+      "property": "color",
+      "applyWhen": { "type": "primary" }
+    },
+    "border-radius": {
+      "token": "button.primary.radius",
+      "property": "border-radius",
+      "applyWhen": {}
+    },
+    "secondary-background": {
+      "token": "button.secondary.background",
+      "property": "background-color",
+      "applyWhen": { "type": "secondary", "state": "default" }
+    },
+    "secondary-hover": {
+      "token": "button.secondary.background-hover",
+      "property": "background-color",
+      "applyWhen": { "type": "secondary", "state": "hover" }
+    },
+    "danger-background": {
+      "token": "button.danger.background",
+      "property": "background-color",
+      "applyWhen": { "type": "primary", "status": "danger" }
+    }
+  },
+
+  "interactionStates": ["default", "hover", "focus", "active", "disabled", "loading"],
+
+  "figmaVariantMapping": {
+    "Type=Primary": { "type": "primary" },
+    "Type=Secondary": { "type": "secondary" },
+    "Type=Outline": { "type": "outline" },
+    "Type=Text": { "type": "text" },
+    "Type=Dashed": { "type": "dashed" },
+    "Status=Warning": { "status": "warning" },
+    "Status=Danger": { "status": "danger" },
+    "Status=Success": { "status": "success" },
+    "Size=Mini": { "size": "mini" },
+    "Size=Small": { "size": "small" },
+    "Size=Default": { "size": "default" },
+    "Size=Large": { "size": "large" },
+    "State=Disabled": { "disabled": true },
+    "State=Loading": { "loading": true }
+  },
+
+  "evidence": {
+    "confidence": "high",
+    "sources": ["arco-design GitHub source", "Figma component library audit"],
+    "extractedBy": "com.anthropic.dtcg-skill",
+    "lastVerified": "2026-03-22"
+  }
+}

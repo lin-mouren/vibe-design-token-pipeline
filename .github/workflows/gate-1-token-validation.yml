@@ -1,0 +1,54 @@
+name: Gate 1 — Token Validation
+
+on:
+  push:
+    paths:
+      - 'source/tokens/**'
+      - 'scripts/validate-dtcg.mjs'
+      - 'scripts/token-linter.mjs'
+      - 'scripts/token-exploder.js'
+  pull_request:
+    paths:
+      - 'source/tokens/**'
+
+jobs:
+  token-validation:
+    name: DTCG Token Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gate 1A — DTCG format validation
+        run: npm run validate:tokens
+
+      - name: Gate 1B — Composite token safety check
+        run: npm run tokens:explode
+
+      - name: Gate 1C — Stage 1.5 token lint (BLOCKING rules only)
+        run: npm run tokens:lint
+
+      - name: Gate 1D — Full SD v5 build
+        run: npm run build
+
+      - name: Gate 1E — CSS [object Object] check
+        run: |
+          if grep -r "\[object Object\]" dist/ 2>/dev/null; then
+            echo "FAIL: [object Object] found in dist/ — composite token explosion failed"
+            exit 1
+          fi
+          echo "PASS: No [object Object] in dist/"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: token-dist-${{ github.sha }}
+          path: dist/
+          retention-days: 7

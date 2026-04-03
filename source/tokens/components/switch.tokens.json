@@ -1,0 +1,36 @@
+{
+  "comp": {
+    "switch": {
+      "track": {
+        "bg": {
+          "off":      { "$type": "color", "$value": "{semantic.color.fill.neutral.default}", "$description": "Switch off state", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-track-bg-off" } } },
+          "on":       { "$type": "color", "$value": "{semantic.color.primary.default}", "$description": "Switch on state", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-track-bg-on" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.fill.neutral.disabled}", "$description": "Switch disabled", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-track-bg-disabled" } } }
+        }
+      },
+      "knob": {
+        "bg": {
+          "default": { "$type": "color", "$value": "{semantic.color.text.inverse}", "$description": "Switch knob background", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-knob-bg-default" } } }
+        }
+      },
+      "size": {
+        "$description": "Switch 各尺寸轨道宽高（高度=圆角半径×2）",
+        "mini": {
+          "height": { "$type": "dimension", "$value": "16px", "$description": "Mini 高度 16px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-mini-height" } } },
+          "width":  { "$type": "dimension", "$value": "28px", "$description": "Mini 宽度 28px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-mini-width" } } }
+        },
+        "small": {
+          "height": { "$type": "dimension", "$value": "20px", "$description": "Small 高度 20px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-small-height" } } },
+          "width":  { "$type": "dimension", "$value": "36px", "$description": "Small 宽度 36px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-small-width" } } }
+        },
+        "default": {
+          "height": { "$type": "dimension", "$value": "24px", "$description": "Default 高度 24px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-default-height" } } },
+          "width":  { "$type": "dimension", "$value": "40px", "$description": "Default 宽度 40px", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-size-default-width" } } }
+        }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.full}", "$description": "Switch pill radius", "$extensions": { "com.arco.design": { "cssVar": "--comp-switch-radius-default" } } }
+      }
+    }
+  }
+}

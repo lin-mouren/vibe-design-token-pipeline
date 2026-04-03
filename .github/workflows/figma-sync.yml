@@ -1,0 +1,141 @@
+name: Figma Variables → Git Sync
+
+# ──────────────────────────────────────────────────────────────────────────────
+# 触发方式（两者结合）
+#
+# 方案 A — REST API 定时轮询：
+#   每个工作日北京时间 9:00 (UTC 01:00) 和 18:00 (UTC 10:00) 自动拉取 Figma Variables
+#
+# 方案 B — Tokens Studio 插件直接推送：
+#   插件推送到 source/tokens/** 时，gate-1-token-validation.yml 自动触发（无需本文件）
+#   本 workflow 仅处理方案 A 的拉取方向
+#
+# 手动触发：
+#   Actions 页面 → "Run workflow"，可选 dry-run 模式预览变更
+# ──────────────────────────────────────────────────────────────────────────────
+
+on:
+  schedule:
+    - cron: '0 1 * * 1-5'   # 工作日 北京时间 09:00 (UTC 01:00)
+    - cron: '0 10 * * 1-5'  # 工作日 北京时间 18:00 (UTC 10:00)
+
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — 仅预览变更，不提交'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  figma-pull-sync:
+    name: Pull Figma Variables → DTCG JSON
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 允许 git push
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      # ── 2. Node.js ───────────────────────────────────────────────────────────
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ── 3. 拉取 Figma Variables ───────────────────────────────────────────────
+      - name: Pull Figma Variables → DTCG JSON
+        id: figma_pull
+        env:
+          FIGMA_PAT: ${{ secrets.FIGMA_PAT }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            echo "::notice::DRY RUN — no files will be written"
+            node figma/variables-sync/figma-to-dtcg.mjs --dry-run
+          else
+            node figma/variables-sync/figma-to-dtcg.mjs
+          fi
+
+      # ── 4. 检测变更 ───────────────────────────────────────────────────────────
+      - name: Detect token changes
+        id: diff
+        run: |
+          if git diff --quiet source/tokens/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "::notice::Figma Variables unchanged — no commit needed"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "::notice::Token changes detected"
+            git diff --stat source/tokens/
+          fi
+
+      # ── 5. Gate 1 验证（仅有变更时运行）───────────────────────────────────────
+      - name: Gate 1A — DTCG format validation
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run validate:tokens
+
+      - name: Gate 1B — Composite token safety check
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run tokens:explode
+
+      - name: Gate 1C — Token lint (BLOCKING rules only)
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run tokens:lint
+
+      - name: Gate 1D — Full SD v5 build (7 platforms)
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Gate 1E — CSS output integrity check
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          if grep -r "\[object Object\]" dist/ 2>/dev/null; then
+            echo "::error::FAIL — [object Object] in dist/ (composite token explosion error)"
+            exit 1
+          fi
+          echo "::notice::PASS — CSS output clean"
+
+      # ── 6. 提交 + 推送（Gate 1 全通过后）─────────────────────────────────────
+      #   使用 [skip ci] 避免触发 gate-1-token-validation.yml 重复运行
+      #   （本 workflow 已内联执行了完整的 Gate 1 验证）
+      - name: Commit and push to main
+        if: steps.diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "figma-sync[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source/tokens/ dist/
+          git commit -m "chore(tokens): sync Figma Variables → DTCG JSON [skip ci]
+
+          Source: Figma REST API /v1/files/.../variables/local
+          Triggered-by: ${{ github.event_name }}
+          Run-ID: ${{ github.run_id }}
+          Gate-1: PASS (validate + explode + lint + build + css-check)"
+          git push
+
+      # ── 7. Summary ───────────────────────────────────────────────────────────
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "## Figma Sync Result" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Item | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Trigger | \`${{ github.event_name }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Dry run | \`${{ github.event.inputs.dry_run || 'false' }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Changes detected | \`${{ steps.diff.outputs.changed }}\` |" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+            echo "| Gate 1 | PASS |" >> $GITHUB_STEP_SUMMARY
+            echo "| Committed | Yes (\`[skip ci]\`) |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| Result | No changes — Figma Variables unchanged |" >> $GITHUB_STEP_SUMMARY
+          fi

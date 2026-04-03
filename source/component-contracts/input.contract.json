@@ -1,0 +1,164 @@
+{
+  "$schema": "https://www.designtokens.org/component-contract/v1",
+  "component": "Input",
+  "figmaNodeName": "Input",
+  "status": "low-confidence",
+  "note": "Token bindings derived from Arco Design CSS variable patterns and spec documentation. Confidence: medium. Final verification requires Figma boundVariables audit.",
+  "codePackage": "@arco-design/web-react",
+  "codeImport": "import { Input } from '@arco-design/web-react'",
+
+  "variants": {
+    "size": {
+      "values": ["mini", "small", "default", "large"],
+      "default": "default"
+    },
+    "status": {
+      "values": ["default", "warning", "error"],
+      "default": "default"
+    },
+    "disabled": {
+      "values": [true, false],
+      "default": false
+    },
+    "readonly": {
+      "values": [true, false],
+      "default": false
+    }
+  },
+
+  "slots": {
+    "default": {
+      "description": "Input text value",
+      "required": false
+    },
+    "prefix": {
+      "description": "Leading icon or text prefix",
+      "required": false
+    },
+    "suffix": {
+      "description": "Trailing icon or text suffix",
+      "required": false
+    },
+    "placeholder": {
+      "description": "Placeholder text",
+      "required": false
+    }
+  },
+
+  "tokenBindings": {
+    "background": {
+      "token": "input.background",
+      "property": "background-color",
+      "applyWhen": { "state": "default" },
+      "resolvedCssVar": "--color-bg-3",
+      "confidence": "medium"
+    },
+    "background-hover": {
+      "token": "input.background-hover",
+      "property": "background-color",
+      "applyWhen": { "state": "hover" },
+      "resolvedCssVar": "--color-bg-2",
+      "confidence": "medium"
+    },
+    "background-disabled": {
+      "token": "input.background-disabled",
+      "property": "background-color",
+      "applyWhen": { "disabled": true },
+      "resolvedCssVar": "--color-bg-4",
+      "confidence": "medium"
+    },
+    "border-color": {
+      "token": "input.border-color",
+      "property": "border-color",
+      "applyWhen": { "status": "default" },
+      "resolvedCssVar": "--color-border-2",
+      "note": "DTCG path is border.2 (border.default is a canonicalName alias in extensions, not a token path)",
+      "confidence": "medium"
+    },
+    "border-color-focus": {
+      "token": "input.border-color-focus",
+      "property": "border-color",
+      "applyWhen": { "state": "focus" },
+      "resolvedCssVar": "--primary-6",
+      "confidence": "medium"
+    },
+    "border-color-error": {
+      "token": "input.border-color-error",
+      "property": "border-color",
+      "applyWhen": { "status": "error" },
+      "resolvedCssVar": "--danger-6",
+      "confidence": "medium"
+    },
+    "border-color-warning": {
+      "token": "input.border-color-warning",
+      "property": "border-color",
+      "applyWhen": { "status": "warning" },
+      "resolvedCssVar": "--warning-6",
+      "confidence": "medium"
+    },
+    "text-color": {
+      "token": "input.text-color",
+      "property": "color",
+      "applyWhen": { "disabled": false },
+      "resolvedCssVar": "--color-text-1",
+      "confidence": "high"
+    },
+    "placeholder-color": {
+      "token": "input.placeholder-color",
+      "property": "color",
+      "applyWhen": { "state": "placeholder" },
+      "resolvedCssVar": "--color-text-3",
+      "confidence": "high"
+    },
+    "text-color-disabled": {
+      "token": "input.text-color-disabled",
+      "property": "color",
+      "applyWhen": { "disabled": true },
+      "resolvedCssVar": "--color-text-4",
+      "confidence": "high"
+    },
+    "border-radius": {
+      "token": "input.border-radius",
+      "property": "border-radius",
+      "applyWhen": {},
+      "resolvedCssVar": "--border-radius-medium",
+      "confidence": "high"
+    },
+    "font-size": {
+      "token": "input.font-size",
+      "property": "font-size",
+      "applyWhen": { "size": "default" },
+      "resolvedCssVar": "--font-size-body-1",
+      "confidence": "high"
+    }
+  },
+
+  "interactionStates": ["default", "focus", "hover", "disabled", "readonly", "error", "warning"],
+
+  "figmaVariantMapping": {
+    "Size=Mini": { "size": "mini" },
+    "Size=Small": { "size": "small" },
+    "Size=Default": { "size": "default" },
+    "Size=Large": { "size": "large" },
+    "Status=Error": { "status": "error" },
+    "Status=Warning": { "status": "warning" },
+    "State=Disabled": { "disabled": true }
+  },
+
+  "evidence": {
+    "confidence": "medium",
+    "sources": [
+      "arco-design GitHub source (component props)",
+      "Arco Design CSS variable reference (https://arco.design/react/docs/token)",
+      "Pattern inference from Button contract (high-confidence component)"
+    ],
+    "extractedBy": "com.anthropic.dtcg-skill",
+    "lastVerified": "2026-03-22",
+    "gaps": [
+      "Figma boundVariables audit not yet performed — token paths need visual confirmation",
+      "Size-specific padding values (mini/large) not yet captured",
+      "Prefix/suffix icon color token not yet identified"
+    ],
+    "pendingAudit": "Run figma/variables-sync/figma-to-dtcg.mjs with FIGMA_PAT + FIGMA_FILE_KEY to verify all bindings"
+  }
+}

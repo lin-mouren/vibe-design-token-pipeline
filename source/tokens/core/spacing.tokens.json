@@ -1,0 +1,68 @@
+{
+  "$schema": "https://www.designtokens.org/tr/2025.10/format/",
+  "core": {
+    "space": {
+      "$description": "Arco Design 间距体系：以 4px 为原子单元",
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "间距 1 – mini (4px)",
+        "$extensions": { "com.arco.design": { "tokenName": "spacing-mini", "cssVar": "--core-space-1" } }
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "间距 2 – small (8px)",
+        "$extensions": { "com.arco.design": { "tokenName": "spacing-small", "cssVar": "--core-space-2" } }
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "间距 3 – small-medium (12px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-3" } }
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "间距 4 – medium (16px)，最常用",
+        "$extensions": { "com.arco.design": { "tokenName": "spacing-medium", "cssVar": "--core-space-4" } }
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "间距 5 – large (24px)",
+        "$extensions": { "com.arco.design": { "tokenName": "spacing-large", "cssVar": "--core-space-5" } }
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "间距 6 – xlarge (32px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-6" } }
+      },
+      "7": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "间距 7 – 2xlarge (40px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-7" } }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "间距 8 – 3xlarge (48px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-8" } }
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "间距 9 – hero (64px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-9" } }
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$description": "间距 10 – super (80px)",
+        "$extensions": { "com.arco.design": { "cssVar": "--core-space-10" } }
+      }
+    }
+  }
+}

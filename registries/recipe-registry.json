@@ -1,0 +1,229 @@
+{
+  "version": "1.0.0",
+  "system": "arco-design",
+  "description": "Approved recipe registry. Recipes are composition patterns not expressible as individual tokens. Agents must use only recipes listed here. If a needed pattern is absent, emit RECIPE_GAP.",
+  "recipes": [
+    {
+      "recipeId": "R-001",
+      "name": "button-primary",
+      "componentName": "Button",
+      "description": "Primary button variant",
+      "tags": [
+        "interactive",
+        "primary",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.primary.bg.default",
+        "comp.button.primary.bg.hover",
+        "comp.button.primary.bg.active",
+        "comp.button.primary.bg.disabled",
+        "comp.button.primary.text.default",
+        "comp.button.primary.text.disabled",
+        "comp.button.primary.border.default"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-002",
+      "name": "button-secondary",
+      "componentName": "Button",
+      "description": "Secondary button variant",
+      "tags": [
+        "interactive",
+        "secondary",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.secondary.bg.default",
+        "comp.button.secondary.bg.hover",
+        "comp.button.secondary.bg.active",
+        "comp.button.secondary.bg.disabled",
+        "comp.button.secondary.text.default",
+        "comp.button.secondary.text.disabled",
+        "comp.button.secondary.border.default",
+        "comp.button.secondary.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-003",
+      "name": "button-outline",
+      "componentName": "Button",
+      "description": "Outline button variant",
+      "tags": [
+        "interactive",
+        "outline",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.outline.bg.default",
+        "comp.button.outline.bg.hover",
+        "comp.button.outline.bg.active",
+        "comp.button.outline.bg.disabled",
+        "comp.button.outline.text.default",
+        "comp.button.outline.text.disabled",
+        "comp.button.outline.border.default",
+        "comp.button.outline.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-004",
+      "name": "button-dashed",
+      "componentName": "Button",
+      "description": "Dashed button variant",
+      "tags": [
+        "interactive",
+        "dashed",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.dashed.bg.default",
+        "comp.button.dashed.bg.hover",
+        "comp.button.dashed.bg.disabled",
+        "comp.button.dashed.text.default",
+        "comp.button.dashed.text.disabled",
+        "comp.button.dashed.border.default",
+        "comp.button.dashed.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-005",
+      "name": "button-text",
+      "componentName": "Button",
+      "description": "Text button variant",
+      "tags": [
+        "interactive",
+        "text",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.text.bg.default",
+        "comp.button.text.bg.hover",
+        "comp.button.text.bg.disabled",
+        "comp.button.text.text.default",
+        "comp.button.text.text.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-006",
+      "name": "button-danger",
+      "componentName": "Button",
+      "description": "Danger button variant",
+      "tags": [
+        "interactive",
+        "danger",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.danger.bg.default",
+        "comp.button.danger.bg.hover",
+        "comp.button.danger.bg.active",
+        "comp.button.danger.bg.disabled",
+        "comp.button.danger.text.default",
+        "comp.button.danger.text.disabled",
+        "comp.button.danger.border.default",
+        "comp.button.danger.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-007",
+      "name": "button-warning",
+      "componentName": "Button",
+      "description": "Warning button variant",
+      "tags": [
+        "interactive",
+        "warning",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.warning.bg.default",
+        "comp.button.warning.bg.hover",
+        "comp.button.warning.bg.active",
+        "comp.button.warning.bg.disabled",
+        "comp.button.warning.text.default",
+        "comp.button.warning.text.disabled",
+        "comp.button.warning.border.default",
+        "comp.button.warning.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-008",
+      "name": "button-success",
+      "componentName": "Button",
+      "description": "Success button variant",
+      "tags": [
+        "interactive",
+        "success",
+        "button"
+      ],
+      "tokenPaths": [
+        "comp.button.success.bg.default",
+        "comp.button.success.bg.hover",
+        "comp.button.success.bg.active",
+        "comp.button.success.bg.disabled",
+        "comp.button.success.text.default",
+        "comp.button.success.text.disabled",
+        "comp.button.success.border.default",
+        "comp.button.success.border.disabled"
+      ],
+      "contractFile": "component-contracts/button.contract.json"
+    },
+    {
+      "recipeId": "R-009",
+      "name": "switch-mini",
+      "componentName": "Switch",
+      "description": "Switch mini size variant",
+      "tags": [
+        "interactive",
+        "toggle",
+        "mini"
+      ],
+      "tokenPaths": [
+        "comp.switch.size.mini.height",
+        "comp.switch.size.mini.width"
+      ],
+      "contractFile": "component-contracts/switch.contract.json"
+    },
+    {
+      "recipeId": "R-010",
+      "name": "switch-small",
+      "componentName": "Switch",
+      "description": "Switch small size variant",
+      "tags": [
+        "interactive",
+        "toggle",
+        "small"
+      ],
+      "tokenPaths": [
+        "comp.switch.size.small.height",
+        "comp.switch.size.small.width"
+      ],
+      "contractFile": "component-contracts/switch.contract.json"
+    },
+    {
+      "recipeId": "R-011",
+      "name": "switch-default",
+      "componentName": "Switch",
+      "description": "Switch default size variant",
+      "tags": [
+        "interactive",
+        "toggle",
+        "default"
+      ],
+      "tokenPaths": [
+        "comp.switch.track.bg.off",
+        "comp.switch.track.bg.on",
+        "comp.switch.track.bg.disabled",
+        "comp.switch.size.default.height",
+        "comp.switch.size.default.width"
+      ],
+      "contractFile": "component-contracts/switch.contract.json"
+    }
+  ]
+}

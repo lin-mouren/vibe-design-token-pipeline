@@ -1,0 +1,82 @@
+{
+  "componentName": "Menu",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 10,
+  "tokens": [
+    {
+      "tokenPath": "comp.menu.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.height.default",
+      "semanticAlias": null,
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.bg.hover",
+      "semanticAlias": "semantic.color.surface.3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.bg.active",
+      "semanticAlias": "semantic.color.primary.light",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.text.default",
+      "semanticAlias": "semantic.color.text.primary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.text.active",
+      "semanticAlias": "semantic.color.primary.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.text.disabled",
+      "semanticAlias": "semantic.color.text.disabled",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.font.size",
+      "semanticAlias": "core.text.size.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.item.padding.h",
+      "semanticAlias": "core.space.3",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.menu.indent.default",
+      "semanticAlias": "core.space.4",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.menu.item.height.default",
+      "violationType": "raw-value",
+      "value": "40px"
+    },
+    {
+      "tokenPath": "comp.menu.item.font.size",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.14}"
+    },
+    {
+      "tokenPath": "comp.menu.item.padding.h",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.3}"
+    },
+    {
+      "tokenPath": "comp.menu.indent.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.4}"
+    }
+  ]
+}

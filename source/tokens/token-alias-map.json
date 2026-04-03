@@ -1,0 +1,1264 @@
+{
+  "aliases": {
+    "color-border": [
+      "border.default"
+    ],
+    "comp.avatar.bg.default": [
+      "comp.avatar.bg.default"
+    ],
+    "comp.avatar.border.default": [
+      "comp.avatar.border.default"
+    ],
+    "comp.avatar.radius.circle": [
+      "comp.avatar.radius.circle"
+    ],
+    "comp.avatar.radius.square": [
+      "comp.avatar.radius.square"
+    ],
+    "comp.avatar.size.default": [
+      "comp.avatar.size.default"
+    ],
+    "comp.avatar.size.large": [
+      "comp.avatar.size.large"
+    ],
+    "comp.avatar.size.mini": [
+      "comp.avatar.size.mini"
+    ],
+    "comp.avatar.size.small": [
+      "comp.avatar.size.small"
+    ],
+    "comp.avatar.size.xlarge": [
+      "comp.avatar.size.xlarge"
+    ],
+    "comp.avatar.text.default": [
+      "comp.avatar.text.default"
+    ],
+    "comp.button.danger.bg.active": [
+      "comp.button.danger.bg.active"
+    ],
+    "comp.button.danger.bg.default": [
+      "comp.button.danger.bg.default"
+    ],
+    "comp.button.danger.bg.disabled": [
+      "comp.button.danger.bg.disabled"
+    ],
+    "comp.button.danger.bg.hover": [
+      "comp.button.danger.bg.hover"
+    ],
+    "comp.button.danger.border.default": [
+      "comp.button.danger.border.default"
+    ],
+    "comp.button.danger.border.disabled": [
+      "comp.button.danger.border.disabled"
+    ],
+    "comp.button.danger.text.default": [
+      "comp.button.danger.text.default"
+    ],
+    "comp.button.danger.text.disabled": [
+      "comp.button.danger.text.disabled"
+    ],
+    "comp.button.dashed.bg.default": [
+      "comp.button.dashed.bg.default"
+    ],
+    "comp.button.dashed.bg.disabled": [
+      "comp.button.dashed.bg.disabled"
+    ],
+    "comp.button.dashed.bg.hover": [
+      "comp.button.dashed.bg.hover"
+    ],
+    "comp.button.dashed.border.default": [
+      "comp.button.dashed.border.default"
+    ],
+    "comp.button.dashed.border.disabled": [
+      "comp.button.dashed.border.disabled"
+    ],
+    "comp.button.dashed.text.default": [
+      "comp.button.dashed.text.default"
+    ],
+    "comp.button.dashed.text.disabled": [
+      "comp.button.dashed.text.disabled"
+    ],
+    "comp.button.font.size.default": [
+      "comp.button.font.size.default"
+    ],
+    "comp.button.font.size.large": [
+      "comp.button.font.size.large"
+    ],
+    "comp.button.font.size.mini": [
+      "comp.button.font.size.mini"
+    ],
+    "comp.button.font.size.small": [
+      "comp.button.font.size.small"
+    ],
+    "comp.button.icon.gap.default": [
+      "comp.button.icon.gap.default"
+    ],
+    "comp.button.icon.gap.large": [
+      "comp.button.icon.gap.large"
+    ],
+    "comp.button.icon.gap.mini": [
+      "comp.button.icon.gap.mini"
+    ],
+    "comp.button.icon.gap.small": [
+      "comp.button.icon.gap.small"
+    ],
+    "comp.button.outline-danger.bg.default": [
+      "comp.button.outline-danger.bg.default"
+    ],
+    "comp.button.outline-danger.bg.hover": [
+      "comp.button.outline-danger.bg.hover"
+    ],
+    "comp.button.outline-danger.border.default": [
+      "comp.button.outline-danger.border.default"
+    ],
+    "comp.button.outline-danger.text.default": [
+      "comp.button.outline-danger.text.default"
+    ],
+    "comp.button.outline.bg.active": [
+      "comp.button.outline.bg.active"
+    ],
+    "comp.button.outline.bg.default": [
+      "comp.button.outline.bg.default"
+    ],
+    "comp.button.outline.bg.disabled": [
+      "comp.button.outline.bg.disabled"
+    ],
+    "comp.button.outline.bg.hover": [
+      "comp.button.outline.bg.hover"
+    ],
+    "comp.button.outline.border.default": [
+      "comp.button.outline.border.default"
+    ],
+    "comp.button.outline.border.disabled": [
+      "comp.button.outline.border.disabled"
+    ],
+    "comp.button.outline.text.default": [
+      "comp.button.outline.text.default"
+    ],
+    "comp.button.outline.text.disabled": [
+      "comp.button.outline.text.disabled"
+    ],
+    "comp.button.padding.h.default": [
+      "comp.button.padding.h.default"
+    ],
+    "comp.button.padding.h.large": [
+      "comp.button.padding.h.large"
+    ],
+    "comp.button.padding.h.mini": [
+      "comp.button.padding.h.mini"
+    ],
+    "comp.button.padding.h.small": [
+      "comp.button.padding.h.small"
+    ],
+    "comp.button.padding.v": [
+      "comp.button.padding.v"
+    ],
+    "comp.button.primary.bg.active": [
+      "comp.button.primary.bg.active"
+    ],
+    "comp.button.primary.bg.default": [
+      "comp.button.primary.bg.default"
+    ],
+    "comp.button.primary.bg.disabled": [
+      "comp.button.primary.bg.disabled"
+    ],
+    "comp.button.primary.bg.hover": [
+      "comp.button.primary.bg.hover"
+    ],
+    "comp.button.primary.border.default": [
+      "comp.button.primary.border.default"
+    ],
+    "comp.button.primary.text.default": [
+      "comp.button.primary.text.default"
+    ],
+    "comp.button.primary.text.disabled": [
+      "comp.button.primary.text.disabled"
+    ],
+    "comp.button.radius.default": [
+      "comp.button.radius.default"
+    ],
+    "comp.button.secondary.bg.active": [
+      "comp.button.secondary.bg.active"
+    ],
+    "comp.button.secondary.bg.default": [
+      "comp.button.secondary.bg.default"
+    ],
+    "comp.button.secondary.bg.disabled": [
+      "comp.button.secondary.bg.disabled"
+    ],
+    "comp.button.secondary.bg.hover": [
+      "comp.button.secondary.bg.hover"
+    ],
+    "comp.button.secondary.border.default": [
+      "comp.button.secondary.border.default"
+    ],
+    "comp.button.secondary.border.disabled": [
+      "comp.button.secondary.border.disabled"
+    ],
+    "comp.button.secondary.text.default": [
+      "comp.button.secondary.text.default"
+    ],
+    "comp.button.secondary.text.disabled": [
+      "comp.button.secondary.text.disabled"
+    ],
+    "comp.button.size.default": [
+      "comp.button.size.default"
+    ],
+    "comp.button.size.large": [
+      "comp.button.size.large"
+    ],
+    "comp.button.size.mini": [
+      "comp.button.size.mini"
+    ],
+    "comp.button.size.small": [
+      "comp.button.size.small"
+    ],
+    "comp.button.success.bg.active": [
+      "comp.button.success.bg.active"
+    ],
+    "comp.button.success.bg.default": [
+      "comp.button.success.bg.default"
+    ],
+    "comp.button.success.bg.disabled": [
+      "comp.button.success.bg.disabled"
+    ],
+    "comp.button.success.bg.hover": [
+      "comp.button.success.bg.hover"
+    ],
+    "comp.button.success.border.default": [
+      "comp.button.success.border.default"
+    ],
+    "comp.button.success.border.disabled": [
+      "comp.button.success.border.disabled"
+    ],
+    "comp.button.success.text.default": [
+      "comp.button.success.text.default"
+    ],
+    "comp.button.success.text.disabled": [
+      "comp.button.success.text.disabled"
+    ],
+    "comp.button.text.bg.default": [
+      "comp.button.text.bg.default"
+    ],
+    "comp.button.text.bg.disabled": [
+      "comp.button.text.bg.disabled"
+    ],
+    "comp.button.text.bg.hover": [
+      "comp.button.text.bg.hover"
+    ],
+    "comp.button.text.text.default": [
+      "comp.button.text.text.default"
+    ],
+    "comp.button.text.text.disabled": [
+      "comp.button.text.text.disabled"
+    ],
+    "comp.button.warning.bg.active": [
+      "comp.button.warning.bg.active"
+    ],
+    "comp.button.warning.bg.default": [
+      "comp.button.warning.bg.default"
+    ],
+    "comp.button.warning.bg.disabled": [
+      "comp.button.warning.bg.disabled"
+    ],
+    "comp.button.warning.bg.hover": [
+      "comp.button.warning.bg.hover"
+    ],
+    "comp.button.warning.border.default": [
+      "comp.button.warning.border.default"
+    ],
+    "comp.button.warning.border.disabled": [
+      "comp.button.warning.border.disabled"
+    ],
+    "comp.button.warning.text.default": [
+      "comp.button.warning.text.default"
+    ],
+    "comp.button.warning.text.disabled": [
+      "comp.button.warning.text.disabled"
+    ],
+    "comp.card.bg.default": [
+      "comp.card.bg.default"
+    ],
+    "comp.card.border.default": [
+      "comp.card.border.default"
+    ],
+    "comp.card.header.border.default": [
+      "comp.card.header.border.default"
+    ],
+    "comp.card.header.text.color": [
+      "comp.card.header.text.color"
+    ],
+    "comp.card.padding.body": [
+      "comp.card.padding.body"
+    ],
+    "comp.card.padding.header": [
+      "comp.card.padding.header"
+    ],
+    "comp.card.radius.default": [
+      "comp.card.radius.default"
+    ],
+    "comp.card.shadow.default": [
+      "comp.card.shadow.default"
+    ],
+    "comp.card.shadow.hover": [
+      "comp.card.shadow.hover"
+    ],
+    "comp.divider.color.default": [
+      "comp.divider.color.default"
+    ],
+    "comp.divider.margin.horizontal": [
+      "comp.divider.margin.horizontal"
+    ],
+    "comp.divider.margin.vertical": [
+      "comp.divider.margin.vertical"
+    ],
+    "comp.divider.text.color": [
+      "comp.divider.text.color"
+    ],
+    "comp.divider.thickness.default": [
+      "comp.divider.thickness.default"
+    ],
+    "comp.drawer.bg.default": [
+      "comp.drawer.bg.default"
+    ],
+    "comp.drawer.header.border.default": [
+      "comp.drawer.header.border.default"
+    ],
+    "comp.drawer.overlay.color": [
+      "comp.drawer.overlay.color"
+    ],
+    "comp.drawer.padding.default": [
+      "comp.drawer.padding.default"
+    ],
+    "comp.drawer.shadow.default": [
+      "comp.drawer.shadow.default"
+    ],
+    "comp.drawer.title.font.size": [
+      "comp.drawer.title.font.size"
+    ],
+    "comp.drawer.title.font.weight": [
+      "comp.drawer.title.font.weight"
+    ],
+    "comp.drawer.width.default": [
+      "comp.drawer.width.default"
+    ],
+    "comp.drawer.zindex.default": [
+      "comp.drawer.zindex.default"
+    ],
+    "comp.form.help.color.default": [
+      "comp.form.help.color.default"
+    ],
+    "comp.form.help.color.error": [
+      "comp.form.help.color.error"
+    ],
+    "comp.form.help.font.size": [
+      "comp.form.help.font.size"
+    ],
+    "comp.form.item.gap": [
+      "comp.form.item.gap"
+    ],
+    "comp.form.label.color.default": [
+      "comp.form.label.color.default"
+    ],
+    "comp.form.label.color.required": [
+      "comp.form.label.color.required"
+    ],
+    "comp.form.label.font.size": [
+      "comp.form.label.font.size"
+    ],
+    "comp.icon.color.active": [
+      "comp.icon.color.active"
+    ],
+    "comp.icon.color.default": [
+      "comp.icon.color.default"
+    ],
+    "comp.icon.color.disabled": [
+      "comp.icon.color.disabled"
+    ],
+    "comp.icon.size.12": [
+      "comp.icon.size.12"
+    ],
+    "comp.icon.size.14": [
+      "comp.icon.size.14"
+    ],
+    "comp.icon.size.16": [
+      "comp.icon.size.16"
+    ],
+    "comp.icon.size.18": [
+      "comp.icon.size.18"
+    ],
+    "comp.icon.size.20": [
+      "comp.icon.size.20"
+    ],
+    "comp.icon.size.24": [
+      "comp.icon.size.24"
+    ],
+    "comp.image.aspect.16-9": [
+      "comp.image.aspect.16-9"
+    ],
+    "comp.image.aspect.21-9": [
+      "comp.image.aspect.21-9"
+    ],
+    "comp.image.aspect.3-2": [
+      "comp.image.aspect.3-2"
+    ],
+    "comp.image.aspect.3-4": [
+      "comp.image.aspect.3-4"
+    ],
+    "comp.image.aspect.4-3": [
+      "comp.image.aspect.4-3"
+    ],
+    "comp.image.aspect.9-16": [
+      "comp.image.aspect.9-16"
+    ],
+    "comp.image.aspect.square": [
+      "comp.image.aspect.square"
+    ],
+    "comp.image.border.default": [
+      "comp.image.border.default"
+    ],
+    "comp.image.overlay.color": [
+      "comp.image.overlay.color"
+    ],
+    "comp.image.placeholder.bg": [
+      "comp.image.placeholder.bg"
+    ],
+    "comp.image.placeholder.color": [
+      "comp.image.placeholder.color"
+    ],
+    "comp.image.radius.default": [
+      "comp.image.radius.default"
+    ],
+    "comp.input.bg.default": [
+      "comp.input.bg.default"
+    ],
+    "comp.input.bg.disabled": [
+      "comp.input.bg.disabled"
+    ],
+    "comp.input.border.default": [
+      "comp.input.border.default"
+    ],
+    "comp.input.border.disabled": [
+      "comp.input.border.disabled"
+    ],
+    "comp.input.border.error": [
+      "comp.input.border.error"
+    ],
+    "comp.input.border.focus": [
+      "comp.input.border.focus"
+    ],
+    "comp.input.border.hover": [
+      "comp.input.border.hover"
+    ],
+    "comp.input.border.warning": [
+      "comp.input.border.warning"
+    ],
+    "comp.input.font.size.default": [
+      "comp.input.font.size.default"
+    ],
+    "comp.input.font.size.large": [
+      "comp.input.font.size.large"
+    ],
+    "comp.input.font.size.mini": [
+      "comp.input.font.size.mini"
+    ],
+    "comp.input.font.size.small": [
+      "comp.input.font.size.small"
+    ],
+    "comp.input.padding.h.default": [
+      "comp.input.padding.h.default"
+    ],
+    "comp.input.padding.h.large": [
+      "comp.input.padding.h.large"
+    ],
+    "comp.input.padding.h.mini": [
+      "comp.input.padding.h.mini"
+    ],
+    "comp.input.padding.h.small": [
+      "comp.input.padding.h.small"
+    ],
+    "comp.input.radius.default": [
+      "comp.input.radius.default"
+    ],
+    "comp.input.size.default": [
+      "comp.input.size.default"
+    ],
+    "comp.input.size.large": [
+      "comp.input.size.large"
+    ],
+    "comp.input.size.mini": [
+      "comp.input.size.mini"
+    ],
+    "comp.input.size.small": [
+      "comp.input.size.small"
+    ],
+    "comp.input.text.default": [
+      "comp.input.text.default"
+    ],
+    "comp.input.text.disabled": [
+      "comp.input.text.disabled"
+    ],
+    "comp.input.text.placeholder": [
+      "comp.input.text.placeholder"
+    ],
+    "comp.menu.bg.default": [
+      "comp.menu.bg.default"
+    ],
+    "comp.menu.indent.default": [
+      "comp.menu.indent.default"
+    ],
+    "comp.menu.item.bg.active": [
+      "comp.menu.item.bg.active"
+    ],
+    "comp.menu.item.bg.hover": [
+      "comp.menu.item.bg.hover"
+    ],
+    "comp.menu.item.font.size": [
+      "comp.menu.item.font.size"
+    ],
+    "comp.menu.item.height.default": [
+      "comp.menu.item.height.default"
+    ],
+    "comp.menu.item.padding.h": [
+      "comp.menu.item.padding.h"
+    ],
+    "comp.menu.item.text.active": [
+      "comp.menu.item.text.active"
+    ],
+    "comp.menu.item.text.default": [
+      "comp.menu.item.text.default"
+    ],
+    "comp.menu.item.text.disabled": [
+      "comp.menu.item.text.disabled"
+    ],
+    "comp.message.bg.default": [
+      "comp.message.bg.default"
+    ],
+    "comp.message.border.default": [
+      "comp.message.border.default"
+    ],
+    "comp.message.gap.icon": [
+      "comp.message.gap.icon"
+    ],
+    "comp.message.icon.error": [
+      "comp.message.icon.error"
+    ],
+    "comp.message.icon.info": [
+      "comp.message.icon.info"
+    ],
+    "comp.message.icon.success": [
+      "comp.message.icon.success"
+    ],
+    "comp.message.icon.warning": [
+      "comp.message.icon.warning"
+    ],
+    "comp.message.padding.h": [
+      "comp.message.padding.h"
+    ],
+    "comp.message.padding.v": [
+      "comp.message.padding.v"
+    ],
+    "comp.message.radius.default": [
+      "comp.message.radius.default"
+    ],
+    "comp.message.shadow.default": [
+      "comp.message.shadow.default"
+    ],
+    "comp.message.text.default": [
+      "comp.message.text.default"
+    ],
+    "comp.message.zindex.default": [
+      "comp.message.zindex.default"
+    ],
+    "comp.modal.bg.default": [
+      "comp.modal.bg.default"
+    ],
+    "comp.modal.footer.border.default": [
+      "comp.modal.footer.border.default"
+    ],
+    "comp.modal.header.border.default": [
+      "comp.modal.header.border.default"
+    ],
+    "comp.modal.overlay.color": [
+      "comp.modal.overlay.color"
+    ],
+    "comp.modal.padding.default": [
+      "comp.modal.padding.default"
+    ],
+    "comp.modal.radius.default": [
+      "comp.modal.radius.default"
+    ],
+    "comp.modal.shadow.default": [
+      "comp.modal.shadow.default"
+    ],
+    "comp.modal.title.font.size": [
+      "comp.modal.title.font.size"
+    ],
+    "comp.modal.title.font.weight": [
+      "comp.modal.title.font.weight"
+    ],
+    "comp.modal.width.default": [
+      "comp.modal.width.default"
+    ],
+    "comp.modal.zindex.default": [
+      "comp.modal.zindex.default"
+    ],
+    "comp.switch.knob.bg.default": [
+      "comp.switch.knob.bg.default"
+    ],
+    "comp.switch.radius.default": [
+      "comp.switch.radius.default"
+    ],
+    "comp.switch.size.default.height": [
+      "comp.switch.size.default.height"
+    ],
+    "comp.switch.size.default.width": [
+      "comp.switch.size.default.width"
+    ],
+    "comp.switch.size.mini.height": [
+      "comp.switch.size.mini.height"
+    ],
+    "comp.switch.size.mini.width": [
+      "comp.switch.size.mini.width"
+    ],
+    "comp.switch.size.small.height": [
+      "comp.switch.size.small.height"
+    ],
+    "comp.switch.size.small.width": [
+      "comp.switch.size.small.width"
+    ],
+    "comp.switch.track.bg.disabled": [
+      "comp.switch.track.bg.disabled"
+    ],
+    "comp.switch.track.bg.off": [
+      "comp.switch.track.bg.off"
+    ],
+    "comp.switch.track.bg.on": [
+      "comp.switch.track.bg.on"
+    ],
+    "color-black": [
+      "core.color.black"
+    ],
+    "arcoblue-1": [
+      "core.color.blue.1"
+    ],
+    "arcoblue-10": [
+      "core.color.blue.10"
+    ],
+    "arcoblue-2": [
+      "core.color.blue.2"
+    ],
+    "arcoblue-3": [
+      "core.color.blue.3"
+    ],
+    "arcoblue-4": [
+      "core.color.blue.4"
+    ],
+    "arcoblue-5": [
+      "core.color.blue.5"
+    ],
+    "arcoblue-6": [
+      "core.color.blue.6"
+    ],
+    "arcoblue-7": [
+      "core.color.blue.7"
+    ],
+    "arcoblue-8": [
+      "core.color.blue.8"
+    ],
+    "arcoblue-9": [
+      "core.color.blue.9"
+    ],
+    "cyan-6": [
+      "core.color.cyan.6"
+    ],
+    "core.color.dark.bg.1": [
+      "core.color.dark.bg.1"
+    ],
+    "core.color.dark.bg.2": [
+      "core.color.dark.bg.2"
+    ],
+    "core.color.dark.bg.3": [
+      "core.color.dark.bg.3"
+    ],
+    "core.color.dark.bg.4": [
+      "core.color.dark.bg.4"
+    ],
+    "core.color.dark.bg.5": [
+      "core.color.dark.bg.5"
+    ],
+    "core.color.dark.border": [
+      "core.color.dark.border"
+    ],
+    "gold-6": [
+      "core.color.gold.6"
+    ],
+    "green-1": [
+      "core.color.green.1"
+    ],
+    "green-10": [
+      "core.color.green.10"
+    ],
+    "green-2": [
+      "core.color.green.2"
+    ],
+    "green-3": [
+      "core.color.green.3"
+    ],
+    "green-4": [
+      "core.color.green.4"
+    ],
+    "green-5": [
+      "core.color.green.5"
+    ],
+    "green-6": [
+      "core.color.green.6"
+    ],
+    "green-7": [
+      "core.color.green.7"
+    ],
+    "green-8": [
+      "core.color.green.8"
+    ],
+    "green-9": [
+      "core.color.green.9"
+    ],
+    "gray-1": [
+      "core.color.neutral.1"
+    ],
+    "gray-10": [
+      "core.color.neutral.10"
+    ],
+    "gray-2": [
+      "core.color.neutral.2"
+    ],
+    "gray-3": [
+      "core.color.neutral.3"
+    ],
+    "gray-4": [
+      "core.color.neutral.4"
+    ],
+    "gray-5": [
+      "core.color.neutral.5"
+    ],
+    "gray-6": [
+      "core.color.neutral.6"
+    ],
+    "gray-7": [
+      "core.color.neutral.7"
+    ],
+    "gray-8": [
+      "core.color.neutral.8"
+    ],
+    "gray-9": [
+      "core.color.neutral.9"
+    ],
+    "orange-1": [
+      "core.color.orange.1"
+    ],
+    "orange-10": [
+      "core.color.orange.10"
+    ],
+    "orange-2": [
+      "core.color.orange.2"
+    ],
+    "orange-3": [
+      "core.color.orange.3"
+    ],
+    "orange-4": [
+      "core.color.orange.4"
+    ],
+    "orange-5": [
+      "core.color.orange.5"
+    ],
+    "orange-6": [
+      "core.color.orange.6"
+    ],
+    "orange-7": [
+      "core.color.orange.7"
+    ],
+    "orange-8": [
+      "core.color.orange.8"
+    ],
+    "orange-9": [
+      "core.color.orange.9"
+    ],
+    "purple-1": [
+      "core.color.purple.1"
+    ],
+    "purple-6": [
+      "core.color.purple.6"
+    ],
+    "red-1": [
+      "core.color.red.1"
+    ],
+    "red-10": [
+      "core.color.red.10"
+    ],
+    "red-2": [
+      "core.color.red.2"
+    ],
+    "red-3": [
+      "core.color.red.3"
+    ],
+    "red-4": [
+      "core.color.red.4"
+    ],
+    "red-5": [
+      "core.color.red.5"
+    ],
+    "red-6": [
+      "core.color.red.6"
+    ],
+    "red-7": [
+      "core.color.red.7"
+    ],
+    "red-8": [
+      "core.color.red.8"
+    ],
+    "red-9": [
+      "core.color.red.9"
+    ],
+    "color-white": [
+      "core.color.white"
+    ],
+    "core.grid.breakpoints.lg": [
+      "core.grid.breakpoints.lg"
+    ],
+    "core.grid.breakpoints.md": [
+      "core.grid.breakpoints.md"
+    ],
+    "core.grid.breakpoints.sm": [
+      "core.grid.breakpoints.sm"
+    ],
+    "core.grid.breakpoints.xl": [
+      "core.grid.breakpoints.xl"
+    ],
+    "core.grid.breakpoints.xs": [
+      "core.grid.breakpoints.xs"
+    ],
+    "core.grid.breakpoints.xxl": [
+      "core.grid.breakpoints.xxl"
+    ],
+    "core.grid.columns.simple": [
+      "core.grid.columns.simple"
+    ],
+    "core.grid.columns.standard": [
+      "core.grid.columns.standard"
+    ],
+    "core.grid.gutter.default": [
+      "core.grid.gutter.default"
+    ],
+    "core.grid.gutter.options.16": [
+      "core.grid.gutter.options.16"
+    ],
+    "core.grid.gutter.options.24": [
+      "core.grid.gutter.options.24"
+    ],
+    "core.grid.gutter.options.32": [
+      "core.grid.gutter.options.32"
+    ],
+    "core.grid.gutter.options.40": [
+      "core.grid.gutter.options.40"
+    ],
+    "core.grid.gutter.options.8": [
+      "core.grid.gutter.options.8"
+    ],
+    "border-radius-circle": [
+      "core.radius.circle"
+    ],
+    "border-radius-large": [
+      "core.radius.large"
+    ],
+    "border-radius-medium": [
+      "core.radius.medium"
+    ],
+    "border-radius-none": [
+      "core.radius.none"
+    ],
+    "border-radius-small": [
+      "core.radius.small"
+    ],
+    "core.radius.xlarge": [
+      "core.radius.xlarge"
+    ],
+    "shadow1-center": [
+      "core.shadow.level1"
+    ],
+    "shadow2-center": [
+      "core.shadow.level2"
+    ],
+    "shadow3-center": [
+      "core.shadow.level3"
+    ],
+    "shadow-special": [
+      "core.shadow.special"
+    ],
+    "core.size.avatar.default": [
+      "core.size.avatar.default"
+    ],
+    "core.size.avatar.large": [
+      "core.size.avatar.large"
+    ],
+    "core.size.avatar.mini": [
+      "core.size.avatar.mini"
+    ],
+    "core.size.avatar.small": [
+      "core.size.avatar.small"
+    ],
+    "core.size.avatar.xlarge": [
+      "core.size.avatar.xlarge"
+    ],
+    "core.size.component.default": [
+      "core.size.component.default"
+    ],
+    "core.size.component.large": [
+      "core.size.component.large"
+    ],
+    "core.size.component.mini": [
+      "core.size.component.mini"
+    ],
+    "core.size.component.small": [
+      "core.size.component.small"
+    ],
+    "core.size.icon.12": [
+      "core.size.icon.12"
+    ],
+    "core.size.icon.14": [
+      "core.size.icon.14"
+    ],
+    "core.size.icon.16": [
+      "core.size.icon.16"
+    ],
+    "core.size.icon.18": [
+      "core.size.icon.18"
+    ],
+    "core.size.icon.20": [
+      "core.size.icon.20"
+    ],
+    "core.size.icon.24": [
+      "core.size.icon.24"
+    ],
+    "spacing-mini": [
+      "core.space.1"
+    ],
+    "core.space.10": [
+      "core.space.10"
+    ],
+    "spacing-small": [
+      "core.space.2"
+    ],
+    "core.space.3": [
+      "core.space.3"
+    ],
+    "spacing-medium": [
+      "core.space.4"
+    ],
+    "spacing-large": [
+      "core.space.5"
+    ],
+    "core.space.6": [
+      "core.space.6"
+    ],
+    "core.space.7": [
+      "core.space.7"
+    ],
+    "core.space.8": [
+      "core.space.8"
+    ],
+    "core.space.9": [
+      "core.space.9"
+    ],
+    "font-family-mono": [
+      "core.text.family.mono"
+    ],
+    "font-family": [
+      "core.text.family.sans"
+    ],
+    "core.text.lineheight.base": [
+      "core.text.lineheight.base"
+    ],
+    "core.text.lineheight.relaxed": [
+      "core.text.lineheight.relaxed"
+    ],
+    "core.text.lineheight.tight": [
+      "core.text.lineheight.tight"
+    ],
+    "core.text.size.12": [
+      "core.text.size.12"
+    ],
+    "core.text.size.13": [
+      "core.text.size.13"
+    ],
+    "core.text.size.14": [
+      "core.text.size.14"
+    ],
+    "core.text.size.16": [
+      "core.text.size.16"
+    ],
+    "core.text.size.18": [
+      "core.text.size.18"
+    ],
+    "core.text.size.20": [
+      "core.text.size.20"
+    ],
+    "core.text.size.24": [
+      "core.text.size.24"
+    ],
+    "core.text.weight.400": [
+      "core.text.weight.400"
+    ],
+    "core.text.weight.500": [
+      "core.text.weight.500"
+    ],
+    "core.text.weight.600": [
+      "core.text.weight.600"
+    ],
+    "core.text.weight.700": [
+      "core.text.weight.700"
+    ],
+    "color-border-2": [
+      "semantic.color.border.default"
+    ],
+    "color-border-3": [
+      "semantic.color.border.strong"
+    ],
+    "color-border-1": [
+      "semantic.color.border.subtle"
+    ],
+    "semantic.color.danger.active": [
+      "semantic.color.danger.active"
+    ],
+    "danger-6": [
+      "semantic.color.danger.default"
+    ],
+    "semantic.color.danger.hover": [
+      "semantic.color.danger.hover"
+    ],
+    "color-danger-light-1": [
+      "semantic.color.danger.light"
+    ],
+    "color-danger-light-4": [
+      "semantic.color.danger.light-4"
+    ],
+    "semantic.color.fill.neutral.default": [
+      "semantic.color.fill.neutral.default"
+    ],
+    "semantic.color.fill.neutral.disabled": [
+      "semantic.color.fill.neutral.disabled"
+    ],
+    "link-6": [
+      "semantic.color.link.default"
+    ],
+    "semantic.color.link.hover": [
+      "semantic.color.link.hover"
+    ],
+    "color-mask-bg": [
+      "semantic.color.mask.bg"
+    ],
+    "semantic.color.overlay.image": [
+      "semantic.color.overlay.image"
+    ],
+    "color-primary-light-1": [
+      "semantic.color.primary.1"
+    ],
+    "color-primary-light-2": [
+      "semantic.color.primary.2"
+    ],
+    "color-primary-light-3": [
+      "semantic.color.primary.3"
+    ],
+    "color-primary-light-4": [
+      "semantic.color.primary.4"
+    ],
+    "primary-7": [
+      "semantic.color.primary.active"
+    ],
+    "primary-6": [
+      "semantic.color.primary.default"
+    ],
+    "semantic.color.primary.disabled": [
+      "semantic.color.primary.disabled"
+    ],
+    "primary-5": [
+      "semantic.color.primary.hover"
+    ],
+    "semantic.color.primary.light": [
+      "semantic.color.primary.light"
+    ],
+    "color-secondary-active": [
+      "semantic.color.secondary.active"
+    ],
+    "color-secondary": [
+      "semantic.color.secondary.default"
+    ],
+    "semantic.color.secondary.disabled": [
+      "semantic.color.secondary.disabled"
+    ],
+    "color-secondary-hover": [
+      "semantic.color.secondary.hover"
+    ],
+    "semantic.color.success.active": [
+      "semantic.color.success.active"
+    ],
+    "success-6": [
+      "semantic.color.success.default"
+    ],
+    "semantic.color.success.hover": [
+      "semantic.color.success.hover"
+    ],
+    "color-success-light-1": [
+      "semantic.color.success.light"
+    ],
+    "color-success-light-4": [
+      "semantic.color.success.light-4"
+    ],
+    "color-bg-1": [
+      "surface.bg-1"
+    ],
+    "color-bg-2": [
+      "surface.bg-2"
+    ],
+    "color-bg-3": [
+      "surface.bg-3"
+    ],
+    "color-bg-4": [
+      "surface.bg-4"
+    ],
+    "semantic.color.surface.page": [
+      "semantic.color.surface.page"
+    ],
+    "color-text-4": [
+      "text.disabled"
+    ],
+    "semantic.color.text.inverse": [
+      "semantic.color.text.inverse"
+    ],
+    "color-text-1": [
+      "text.primary"
+    ],
+    "color-text-2": [
+      "text.secondary"
+    ],
+    "color-text-3": [
+      "text.tertiary"
+    ],
+    "semantic.color.warning.active": [
+      "semantic.color.warning.active"
+    ],
+    "warning-6": [
+      "semantic.color.warning.default"
+    ],
+    "semantic.color.warning.hover": [
+      "semantic.color.warning.hover"
+    ],
+    "color-warning-light-1": [
+      "semantic.color.warning.light"
+    ],
+    "color-warning-light-4": [
+      "semantic.color.warning.light-4"
+    ],
+    "semantic.layout.content.gap": [
+      "semantic.layout.content.gap"
+    ],
+    "semantic.layout.content.padding": [
+      "semantic.layout.content.padding"
+    ],
+    "semantic.layout.divider.color": [
+      "semantic.layout.divider.color"
+    ],
+    "semantic.layout.divider.margin": [
+      "semantic.layout.divider.margin"
+    ],
+    "semantic.layout.divider.thickness": [
+      "semantic.layout.divider.thickness"
+    ],
+    "semantic.radius.full": [
+      "semantic.radius.full"
+    ],
+    "semantic.radius.md": [
+      "semantic.radius.md"
+    ],
+    "semantic.radius.sm": [
+      "semantic.radius.sm"
+    ],
+    "semantic.shadow.lg": [
+      "semantic.shadow.lg"
+    ],
+    "semantic.shadow.md": [
+      "semantic.shadow.md"
+    ],
+    "semantic.shadow.sm": [
+      "semantic.shadow.sm"
+    ],
+    "semantic.size.avatar.default": [
+      "semantic.size.avatar.default"
+    ],
+    "semantic.size.avatar.large": [
+      "semantic.size.avatar.large"
+    ],
+    "semantic.size.avatar.mini": [
+      "semantic.size.avatar.mini"
+    ],
+    "semantic.size.avatar.small": [
+      "semantic.size.avatar.small"
+    ],
+    "semantic.size.avatar.xlarge": [
+      "semantic.size.avatar.xlarge"
+    ],
+    "semantic.size.component.default": [
+      "semantic.size.component.default"
+    ],
+    "semantic.size.component.large": [
+      "semantic.size.component.large"
+    ],
+    "semantic.size.component.mini": [
+      "semantic.size.component.mini"
+    ],
+    "semantic.size.component.small": [
+      "semantic.size.component.small"
+    ],
+    "semantic.size.icon.12": [
+      "semantic.size.icon.12"
+    ],
+    "semantic.size.icon.14": [
+      "semantic.size.icon.14"
+    ],
+    "semantic.size.icon.16": [
+      "semantic.size.icon.16"
+    ],
+    "semantic.size.icon.18": [
+      "semantic.size.icon.18"
+    ],
+    "semantic.size.icon.20": [
+      "semantic.size.icon.20"
+    ],
+    "semantic.size.icon.24": [
+      "semantic.size.icon.24"
+    ],
+    "semantic.spacing.lg": [
+      "semantic.spacing.lg"
+    ],
+    "semantic.spacing.md": [
+      "semantic.spacing.md"
+    ],
+    "semantic.spacing.sm": [
+      "semantic.spacing.sm"
+    ],
+    "semantic.spacing.xs": [
+      "semantic.spacing.xs"
+    ],
+    "semantic.typography.size.md": [
+      "semantic.typography.size.md"
+    ],
+    "semantic.typography.size.sm": [
+      "semantic.typography.size.sm"
+    ],
+    "semantic.typography.size.xs": [
+      "semantic.typography.size.xs"
+    ],
+    "color-bg-5": [
+      "surface.bg-5"
+    ]
+  }
+}

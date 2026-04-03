@@ -1,0 +1,82 @@
+{
+  "componentName": "Card",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 9,
+  "tokens": [
+    {
+      "tokenPath": "comp.card.bg.default",
+      "semanticAlias": "semantic.color.surface.1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.radius.default",
+      "semanticAlias": "core.radius.large",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.shadow.default",
+      "semanticAlias": "core.shadow.level1",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.shadow.hover",
+      "semanticAlias": "core.shadow.level2",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.header.border.default",
+      "semanticAlias": "semantic.color.border.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.header.text.color",
+      "semanticAlias": "semantic.color.text.primary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.padding.header",
+      "semanticAlias": "core.space.4",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.card.padding.body",
+      "semanticAlias": "core.space.4",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.card.radius.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.radius.large}"
+    },
+    {
+      "tokenPath": "comp.card.shadow.default",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.shadow.level1}"
+    },
+    {
+      "tokenPath": "comp.card.shadow.hover",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.shadow.level2}"
+    },
+    {
+      "tokenPath": "comp.card.padding.header",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.4}"
+    },
+    {
+      "tokenPath": "comp.card.padding.body",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.4}"
+    }
+  ]
+}

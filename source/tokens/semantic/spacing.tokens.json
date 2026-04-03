@@ -1,0 +1,10 @@
+{
+  "semantic": {
+    "spacing": {
+      "xs": { "$type": "dimension", "$value": "{core.space.2}", "$description": "Extra-small spacing (8px) — icon gaps, inline gaps", "$extensions": { "com.arco.design": { "cssVar": "--semantic-spacing-xs" } } },
+      "sm": { "$type": "dimension", "$value": "{core.space.3}", "$description": "Small spacing (12px) — item padding, compact gaps", "$extensions": { "com.arco.design": { "cssVar": "--semantic-spacing-sm" } } },
+      "md": { "$type": "dimension", "$value": "{core.space.4}", "$description": "Medium spacing (16px) — standard padding, card content", "$extensions": { "com.arco.design": { "cssVar": "--semantic-spacing-md" } } },
+      "lg": { "$type": "dimension", "$value": "{core.space.5}", "$description": "Large spacing (24px) — section padding, form gaps", "$extensions": { "com.arco.design": { "cssVar": "--semantic-spacing-lg" } } }
+    }
+  }
+}

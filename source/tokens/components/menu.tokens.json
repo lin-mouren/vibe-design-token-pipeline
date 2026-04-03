@@ -1,0 +1,32 @@
+{
+  "comp": {
+    "menu": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Menu background", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-bg-default" } } }
+      },
+      "item": {
+        "height": {
+          "default": { "$type": "dimension", "$value": "40px", "$description": "Menu item height", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-height-default" } } }
+        },
+        "bg": {
+          "hover":  { "$type": "color", "$value": "{semantic.color.surface.3}", "$description": "Menu item hover bg", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-bg-hover" } } },
+          "active": { "$type": "color", "$value": "{semantic.color.primary.light}", "$description": "Active item bg", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-bg-active" } } }
+        },
+        "text": {
+          "default":  { "$type": "color", "$value": "{semantic.color.text.primary}", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-text-default" } } },
+          "active":   { "$type": "color", "$value": "{semantic.color.primary.default}", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-text-active" } } },
+          "disabled": { "$type": "color", "$value": "{semantic.color.text.disabled}", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-text-disabled" } } }
+        },
+        "font": {
+          "size": { "$type": "dimension", "$value": "{semantic.typography.size.sm}", "$description": "Menu item font size 14px", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-font-size" } } }
+        },
+        "padding": {
+          "h": { "$type": "dimension", "$value": "{semantic.spacing.sm}", "$description": "Menu item horizontal padding 12px", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-item-padding-h" } } }
+        }
+      },
+      "indent": {
+        "default": { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Sub-menu indent (16px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-menu-indent-default" } } }
+      }
+    }
+  }
+}

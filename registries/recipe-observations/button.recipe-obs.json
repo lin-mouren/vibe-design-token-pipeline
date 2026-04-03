@@ -1,0 +1,154 @@
+{
+  "componentName": "Button",
+  "contractFile": "component-contracts/button.contract.json",
+  "observedAt": "2026-04-01T00:00:00Z",
+  "recipes": [
+    {
+      "name": "button-primary",
+      "description": "Primary button variant",
+      "tokenPaths": [
+        "comp.button.primary.bg.default",
+        "comp.button.primary.bg.hover",
+        "comp.button.primary.bg.active",
+        "comp.button.primary.bg.disabled",
+        "comp.button.primary.text.default",
+        "comp.button.primary.text.disabled",
+        "comp.button.primary.border.default"
+      ],
+      "tags": [
+        "interactive",
+        "primary",
+        "button"
+      ]
+    },
+    {
+      "name": "button-secondary",
+      "description": "Secondary button variant",
+      "tokenPaths": [
+        "comp.button.secondary.bg.default",
+        "comp.button.secondary.bg.hover",
+        "comp.button.secondary.bg.active",
+        "comp.button.secondary.bg.disabled",
+        "comp.button.secondary.text.default",
+        "comp.button.secondary.text.disabled",
+        "comp.button.secondary.border.default",
+        "comp.button.secondary.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "secondary",
+        "button"
+      ]
+    },
+    {
+      "name": "button-outline",
+      "description": "Outline button variant",
+      "tokenPaths": [
+        "comp.button.outline.bg.default",
+        "comp.button.outline.bg.hover",
+        "comp.button.outline.bg.active",
+        "comp.button.outline.bg.disabled",
+        "comp.button.outline.text.default",
+        "comp.button.outline.text.disabled",
+        "comp.button.outline.border.default",
+        "comp.button.outline.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "outline",
+        "button"
+      ]
+    },
+    {
+      "name": "button-dashed",
+      "description": "Dashed button variant",
+      "tokenPaths": [
+        "comp.button.dashed.bg.default",
+        "comp.button.dashed.bg.hover",
+        "comp.button.dashed.bg.disabled",
+        "comp.button.dashed.text.default",
+        "comp.button.dashed.text.disabled",
+        "comp.button.dashed.border.default",
+        "comp.button.dashed.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "dashed",
+        "button"
+      ]
+    },
+    {
+      "name": "button-text",
+      "description": "Text button variant",
+      "tokenPaths": [
+        "comp.button.text.bg.default",
+        "comp.button.text.bg.hover",
+        "comp.button.text.bg.disabled",
+        "comp.button.text.text.default",
+        "comp.button.text.text.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "text",
+        "button"
+      ]
+    },
+    {
+      "name": "button-danger",
+      "description": "Danger button variant",
+      "tokenPaths": [
+        "comp.button.danger.bg.default",
+        "comp.button.danger.bg.hover",
+        "comp.button.danger.bg.active",
+        "comp.button.danger.bg.disabled",
+        "comp.button.danger.text.default",
+        "comp.button.danger.text.disabled",
+        "comp.button.danger.border.default",
+        "comp.button.danger.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "danger",
+        "button"
+      ]
+    },
+    {
+      "name": "button-warning",
+      "description": "Warning button variant",
+      "tokenPaths": [
+        "comp.button.warning.bg.default",
+        "comp.button.warning.bg.hover",
+        "comp.button.warning.bg.active",
+        "comp.button.warning.bg.disabled",
+        "comp.button.warning.text.default",
+        "comp.button.warning.text.disabled",
+        "comp.button.warning.border.default",
+        "comp.button.warning.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "warning",
+        "button"
+      ]
+    },
+    {
+      "name": "button-success",
+      "description": "Success button variant",
+      "tokenPaths": [
+        "comp.button.success.bg.default",
+        "comp.button.success.bg.hover",
+        "comp.button.success.bg.active",
+        "comp.button.success.bg.disabled",
+        "comp.button.success.text.default",
+        "comp.button.success.text.disabled",
+        "comp.button.success.border.default",
+        "comp.button.success.border.disabled"
+      ],
+      "tags": [
+        "interactive",
+        "success",
+        "button"
+      ]
+    }
+  ]
+}

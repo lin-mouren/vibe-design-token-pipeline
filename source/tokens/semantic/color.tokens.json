@@ -1,0 +1,48 @@
+{
+  "semantic": {
+    "color": {
+      "primary": {
+        "default":  { "$type": "color", "$value": "{core.color.blue.6}", "$description": "Primary default", "$extensions": { "com.arco.design": { "tokenName": "primary-6", "cssVar": "--semantic-color-primary-default" } } },
+        "hover":    { "$type": "color", "$value": "{core.color.blue.5}", "$description": "Primary hover", "$extensions": { "com.arco.design": { "tokenName": "primary-5", "cssVar": "--semantic-color-primary-hover" } } },
+        "active":   { "$type": "color", "$value": "{core.color.blue.7}", "$description": "Primary active", "$extensions": { "com.arco.design": { "tokenName": "primary-7", "cssVar": "--semantic-color-primary-active" } } },
+        "disabled": { "$type": "color", "$value": "{core.color.blue.3}", "$description": "Primary disabled", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-primary-disabled" } } },
+        "light":    { "$type": "color", "$value": "{core.color.blue.1}", "$description": "Primary light tint", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-primary-light" } } },
+        "1": { "$type": "color", "$value": "{core.color.blue.1}", "$extensions": { "com.arco.design": { "tokenName": "color-primary-light-1", "cssVar": "--semantic-color-primary-1" } } },
+        "2": { "$type": "color", "$value": "{core.color.blue.2}", "$extensions": { "com.arco.design": { "tokenName": "color-primary-light-2", "cssVar": "--semantic-color-primary-2" } } },
+        "3": { "$type": "color", "$value": "{core.color.blue.3}", "$extensions": { "com.arco.design": { "tokenName": "color-primary-light-3", "cssVar": "--semantic-color-primary-3" } } },
+        "4": { "$type": "color", "$value": "{core.color.blue.4}", "$extensions": { "com.arco.design": { "tokenName": "color-primary-light-4", "cssVar": "--semantic-color-primary-4" } } }
+      },
+      "secondary": {
+        "default":  { "$type": "color", "$value": "{core.color.neutral.2}", "$description": "Secondary fill default", "$extensions": { "com.arco.design": { "tokenName": "color-secondary", "cssVar": "--semantic-color-secondary-default" } } },
+        "hover":    { "$type": "color", "$value": "{core.color.neutral.3}", "$description": "Secondary hover", "$extensions": { "com.arco.design": { "tokenName": "color-secondary-hover", "cssVar": "--semantic-color-secondary-hover" } } },
+        "active":   { "$type": "color", "$value": "{core.color.neutral.4}", "$description": "Secondary active", "$extensions": { "com.arco.design": { "tokenName": "color-secondary-active", "cssVar": "--semantic-color-secondary-active" } } },
+        "disabled": { "$type": "color", "$value": "{core.color.neutral.1}", "$description": "Secondary disabled", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-secondary-disabled" } } }
+      },
+      "danger": {
+        "default": { "$type": "color", "$value": "{core.color.red.6}", "$description": "Danger default", "$extensions": { "com.arco.design": { "tokenName": "danger-6", "cssVar": "--semantic-color-danger-default" } } },
+        "hover":   { "$type": "color", "$value": "{core.color.red.5}", "$description": "Danger hover", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-danger-hover" } } },
+        "active":  { "$type": "color", "$value": "{core.color.red.7}", "$description": "Danger active", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-danger-active" } } },
+        "light":   { "$type": "color", "$value": "{core.color.red.1}", "$description": "Danger light tint", "$extensions": { "com.arco.design": { "tokenName": "color-danger-light-1", "cssVar": "--semantic-color-danger-light" } } },
+        "light-4": { "$type": "color", "$value": "{core.color.red.4}", "$extensions": { "com.arco.design": { "tokenName": "color-danger-light-4", "cssVar": "--semantic-color-danger-light-4" } } }
+      },
+      "success": {
+        "default": { "$type": "color", "$value": "{core.color.green.6}", "$description": "Success default", "$extensions": { "com.arco.design": { "tokenName": "success-6", "cssVar": "--semantic-color-success-default" } } },
+        "hover":   { "$type": "color", "$value": "{core.color.green.5}", "$description": "Success hover", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-success-hover" } } },
+        "active":  { "$type": "color", "$value": "{core.color.green.7}", "$description": "Success active", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-success-active" } } },
+        "light":   { "$type": "color", "$value": "{core.color.green.1}", "$description": "Success light tint", "$extensions": { "com.arco.design": { "tokenName": "color-success-light-1", "cssVar": "--semantic-color-success-light" } } },
+        "light-4": { "$type": "color", "$value": "{core.color.green.4}", "$extensions": { "com.arco.design": { "tokenName": "color-success-light-4", "cssVar": "--semantic-color-success-light-4" } } }
+      },
+      "warning": {
+        "default": { "$type": "color", "$value": "{core.color.orange.6}", "$description": "Warning default", "$extensions": { "com.arco.design": { "tokenName": "warning-6", "cssVar": "--semantic-color-warning-default" } } },
+        "hover":   { "$type": "color", "$value": "{core.color.orange.5}", "$description": "Warning hover", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-warning-hover" } } },
+        "active":  { "$type": "color", "$value": "{core.color.orange.7}", "$description": "Warning active", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-warning-active" } } },
+        "light":   { "$type": "color", "$value": "{core.color.orange.1}", "$description": "Warning light tint", "$extensions": { "com.arco.design": { "tokenName": "color-warning-light-1", "cssVar": "--semantic-color-warning-light" } } },
+        "light-4": { "$type": "color", "$value": "{core.color.orange.4}", "$extensions": { "com.arco.design": { "tokenName": "color-warning-light-4", "cssVar": "--semantic-color-warning-light-4" } } }
+      },
+      "link": {
+        "default": { "$type": "color", "$value": "{core.color.blue.6}", "$description": "Link default", "$extensions": { "com.arco.design": { "tokenName": "link-6", "cssVar": "--semantic-color-link-default" } } },
+        "hover":   { "$type": "color", "$value": "{core.color.blue.5}", "$description": "Link hover", "$extensions": { "com.arco.design": { "cssVar": "--semantic-color-link-hover" } } }
+      }
+    }
+  }
+}

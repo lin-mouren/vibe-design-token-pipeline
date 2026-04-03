@@ -1,0 +1,43 @@
+{
+  "comp": {
+    "modal": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Modal background", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-bg-default" } } }
+      },
+      "overlay": {
+        "color": { "$type": "color", "$value": "{semantic.color.mask.bg}", "$description": "Modal overlay color", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-overlay-color" } } }
+      },
+      "shadow": {
+        "default": { "$type": "shadow", "$value": "{semantic.shadow.lg}", "$description": "Modal box shadow (level3 — floating panel)", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-shadow-default" } } }
+      },
+      "header": {
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Modal header bottom divider", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-header-border-default" } } }
+        }
+      },
+      "footer": {
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Modal footer top divider", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-footer-border-default" } } }
+        }
+      },
+      "title": {
+        "font": {
+          "size":   { "$type": "dimension", "$value": "{semantic.typography.size.md}", "$description": "Modal title font size 16px", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-title-font-size" } } },
+          "weight": { "$type": "fontWeight", "$value": 500, "$description": "Modal title font weight (medium)", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-title-font-weight" } } }
+        }
+      },
+      "width": {
+        "default": { "$type": "dimension", "$value": "520px", "$description": "Default modal width", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-width-default" } } }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.md}", "$description": "Modal corner radius (8px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-radius-default" } } }
+      },
+      "padding": {
+        "default": { "$type": "dimension", "$value": "{semantic.spacing.lg}", "$description": "Modal padding (24px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-padding-default" } } }
+      },
+      "zindex": {
+        "default": { "$type": "number", "$value": 1001, "$description": "Modal z-index", "$extensions": { "com.arco.design": { "cssVar": "--comp-modal-zindex-default" } } }
+      }
+    }
+  }
+}

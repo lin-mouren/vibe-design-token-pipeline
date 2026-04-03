@@ -1,0 +1,11 @@
+{
+  "semantic": {
+    "typography": {
+      "size": {
+        "xs":  { "$type": "dimension", "$value": "{core.text.size.12}", "$description": "Extra-small font size (12px) — captions, help text, badges", "$extensions": { "com.arco.design": { "cssVar": "--semantic-typography-size-xs" } } },
+        "sm":  { "$type": "dimension", "$value": "{core.text.size.14}", "$description": "Small font size (14px) — body copy, form labels, list items", "$extensions": { "com.arco.design": { "cssVar": "--semantic-typography-size-sm" } } },
+        "md":  { "$type": "dimension", "$value": "{core.text.size.16}", "$description": "Medium font size (16px) — dialog titles, section headings", "$extensions": { "com.arco.design": { "cssVar": "--semantic-typography-size-md" } } }
+      }
+    }
+  }
+}

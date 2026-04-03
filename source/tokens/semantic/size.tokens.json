@@ -1,0 +1,27 @@
+{
+  "semantic": {
+    "size": {
+      "component": {
+        "mini":    { "$type": "dimension", "$value": "{core.size.component.mini}",    "$description": "Mini component height (24px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-component-mini" } } },
+        "small":   { "$type": "dimension", "$value": "{core.size.component.small}",   "$description": "Small component height (28px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-component-small" } } },
+        "default": { "$type": "dimension", "$value": "{core.size.component.default}", "$description": "Default component height (32px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-component-default" } } },
+        "large":   { "$type": "dimension", "$value": "{core.size.component.large}",   "$description": "Large component height (36px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-component-large" } } }
+      },
+      "avatar": {
+        "mini":   { "$type": "dimension", "$value": "{core.size.avatar.mini}",   "$description": "Mini avatar (24px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-avatar-mini" } } },
+        "small":  { "$type": "dimension", "$value": "{core.size.avatar.small}",  "$description": "Small avatar (28px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-avatar-small" } } },
+        "default":{ "$type": "dimension", "$value": "{core.size.avatar.default}","$description": "Default avatar (32px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-avatar-default" } } },
+        "large":  { "$type": "dimension", "$value": "{core.size.avatar.large}",  "$description": "Large avatar (40px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-avatar-large" } } },
+        "xlarge": { "$type": "dimension", "$value": "{core.size.avatar.xlarge}", "$description": "Extra-large avatar (64px)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-avatar-xlarge" } } }
+      },
+      "icon": {
+        "12": { "$type": "dimension", "$value": "{core.size.icon.12}", "$description": "Icon size 12px", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-12" } } },
+        "14": { "$type": "dimension", "$value": "{core.size.icon.14}", "$description": "Icon size 14px", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-14" } } },
+        "16": { "$type": "dimension", "$value": "{core.size.icon.16}", "$description": "Icon size 16px (default)", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-16" } } },
+        "18": { "$type": "dimension", "$value": "{core.size.icon.18}", "$description": "Icon size 18px", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-18" } } },
+        "20": { "$type": "dimension", "$value": "{core.size.icon.20}", "$description": "Icon size 20px", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-20" } } },
+        "24": { "$type": "dimension", "$value": "{core.size.icon.24}", "$description": "Icon size 24px", "$extensions": { "com.arco.design": { "cssVar": "--semantic-size-icon-24" } } }
+      }
+    }
+  }
+}

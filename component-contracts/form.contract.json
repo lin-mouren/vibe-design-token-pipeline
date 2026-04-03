@@ -1,0 +1,62 @@
+{
+  "componentName": "Form",
+  "version": "1.0.0",
+  "contractDate": "2026-04-01T00:00:00Z",
+  "tokenCount": 7,
+  "tokens": [
+    {
+      "tokenPath": "comp.form.label.color.default",
+      "semanticAlias": "semantic.color.text.primary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.label.color.required",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.label.font.size",
+      "semanticAlias": "core.text.size.14",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.help.color.default",
+      "semanticAlias": "semantic.color.text.tertiary",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.help.color.error",
+      "semanticAlias": "semantic.color.danger.default",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.help.font.size",
+      "semanticAlias": "core.text.size.12",
+      "requiredInAllThemes": true
+    },
+    {
+      "tokenPath": "comp.form.item.gap",
+      "semanticAlias": "core.space.5",
+      "requiredInAllThemes": true
+    }
+  ],
+  "gaps": [],
+  "semanticLayerVerified": true,
+  "layerViolations": [
+    {
+      "tokenPath": "comp.form.label.font.size",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.14}"
+    },
+    {
+      "tokenPath": "comp.form.help.font.size",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.text.size.12}"
+    },
+    {
+      "tokenPath": "comp.form.item.gap",
+      "violationType": "core-noncolor-ref",
+      "value": "{core.space.5}"
+    }
+  ]
+}

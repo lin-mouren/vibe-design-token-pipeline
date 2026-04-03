@@ -1,0 +1,88 @@
+{
+  "core": {
+    "color": {
+      "blue": {
+        "1": { "$type": "color", "$value": "rgb(232,243,255)", "$description": "Blue scale step 1 – lightest", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-1", "cssVar": "--core-color-blue-1" } } },
+        "2": { "$type": "color", "$value": "rgb(190,218,255)", "$description": "Blue 2", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-2", "cssVar": "--core-color-blue-2" } } },
+        "3": { "$type": "color", "$value": "rgb(148,191,255)", "$description": "Blue 3", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-3", "cssVar": "--core-color-blue-3" } } },
+        "4": { "$type": "color", "$value": "rgb(106,161,255)", "$description": "Blue 4", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-4", "cssVar": "--core-color-blue-4" } } },
+        "5": { "$type": "color", "$value": "rgb(64,128,255)", "$description": "Blue 5", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-5", "cssVar": "--core-color-blue-5" } } },
+        "6": { "$type": "color", "$value": "rgb(22,93,255)", "$description": "Blue 6 – primary brand blue", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-6", "cssVar": "--core-color-blue-6" }, "com.anthropic.dtcg-skill": { "usage": ["brand primary action", "CTA button background", "link default"] } } },
+        "7": { "$type": "color", "$value": "rgb(14,66,210)", "$description": "Blue 7", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-7", "cssVar": "--core-color-blue-7" } } },
+        "8": { "$type": "color", "$value": "rgb(7,44,166)", "$description": "Blue 8", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-8", "cssVar": "--core-color-blue-8" } } },
+        "9": { "$type": "color", "$value": "rgb(3,26,121)", "$description": "Blue 9", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-9", "cssVar": "--core-color-blue-9" } } },
+        "10": { "$type": "color", "$value": "rgb(0,13,77)", "$description": "Blue 10 – darkest", "$extensions": { "com.arco.design": { "tokenName": "arcoblue-10", "cssVar": "--core-color-blue-10" } } }
+      },
+      "neutral": {
+        "1": { "$type": "color", "$value": "rgb(247,248,250)", "$description": "Neutral 1 – near white", "$extensions": { "com.arco.design": { "tokenName": "gray-1", "cssVar": "--core-color-neutral-1" }, "com.anthropic.dtcg-skill": { "usage": ["page background", "fill-1"] } } },
+        "2": { "$type": "color", "$value": "rgb(242,243,245)", "$description": "Neutral 2", "$extensions": { "com.arco.design": { "tokenName": "gray-2", "cssVar": "--core-color-neutral-2" } } },
+        "3": { "$type": "color", "$value": "rgb(229,230,235)", "$description": "Neutral 3 – default border", "$extensions": { "com.arco.design": { "tokenName": "gray-3", "cssVar": "--core-color-neutral-3" } } },
+        "4": { "$type": "color", "$value": "rgb(201,205,212)", "$description": "Neutral 4", "$extensions": { "com.arco.design": { "tokenName": "gray-4", "cssVar": "--core-color-neutral-4" } } },
+        "5": { "$type": "color", "$value": "rgb(169,174,184)", "$description": "Neutral 5", "$extensions": { "com.arco.design": { "tokenName": "gray-5", "cssVar": "--core-color-neutral-5" } } },
+        "6": { "$type": "color", "$value": "rgb(134,144,156)", "$description": "Neutral 6", "$extensions": { "com.arco.design": { "tokenName": "gray-6", "cssVar": "--core-color-neutral-6" } } },
+        "7": { "$type": "color", "$value": "rgb(107,119,133)", "$description": "Neutral 7", "$extensions": { "com.arco.design": { "tokenName": "gray-7", "cssVar": "--core-color-neutral-7" } } },
+        "8": { "$type": "color", "$value": "rgb(78,89,105)", "$description": "Neutral 8 – text-2", "$extensions": { "com.arco.design": { "tokenName": "gray-8", "cssVar": "--core-color-neutral-8" } } },
+        "9": { "$type": "color", "$value": "rgb(39,46,59)", "$description": "Neutral 9", "$extensions": { "com.arco.design": { "tokenName": "gray-9", "cssVar": "--core-color-neutral-9" } } },
+        "10": { "$type": "color", "$value": "rgb(29,33,41)", "$description": "Neutral 10 – primary text", "$extensions": { "com.arco.design": { "tokenName": "gray-10", "cssVar": "--core-color-neutral-10" }, "com.anthropic.dtcg-skill": { "usage": ["primary text", "heading"] } } }
+      },
+      "red": {
+        "1": { "$type": "color", "$value": "rgb(255,236,232)", "$extensions": { "com.arco.design": { "tokenName": "red-1", "cssVar": "--core-color-red-1" } } },
+        "2": { "$type": "color", "$value": "rgb(253,205,197)", "$extensions": { "com.arco.design": { "tokenName": "red-2", "cssVar": "--core-color-red-2" } } },
+        "3": { "$type": "color", "$value": "rgb(251,172,163)", "$extensions": { "com.arco.design": { "tokenName": "red-3", "cssVar": "--core-color-red-3" } } },
+        "4": { "$type": "color", "$value": "rgb(249,137,129)", "$extensions": { "com.arco.design": { "tokenName": "red-4", "cssVar": "--core-color-red-4" } } },
+        "5": { "$type": "color", "$value": "rgb(247,101,96)", "$extensions": { "com.arco.design": { "tokenName": "red-5", "cssVar": "--core-color-red-5" } } },
+        "6": { "$type": "color", "$value": "rgb(245,63,63)", "$description": "Red 6 – danger default", "$extensions": { "com.arco.design": { "tokenName": "red-6", "cssVar": "--core-color-red-6" } } },
+        "7": { "$type": "color", "$value": "rgb(203,39,45)", "$extensions": { "com.arco.design": { "tokenName": "red-7", "cssVar": "--core-color-red-7" } } },
+        "8": { "$type": "color", "$value": "rgb(161,21,30)", "$extensions": { "com.arco.design": { "tokenName": "red-8", "cssVar": "--core-color-red-8" } } },
+        "9": { "$type": "color", "$value": "rgb(119,8,19)", "$extensions": { "com.arco.design": { "tokenName": "red-9", "cssVar": "--core-color-red-9" } } },
+        "10": { "$type": "color", "$value": "rgb(77,0,10)", "$extensions": { "com.arco.design": { "tokenName": "red-10", "cssVar": "--core-color-red-10" } } }
+      },
+      "orange": {
+        "1": { "$type": "color", "$value": "rgb(255,247,232)", "$extensions": { "com.arco.design": { "tokenName": "orange-1", "cssVar": "--core-color-orange-1" } } },
+        "2": { "$type": "color", "$value": "rgb(255,228,186)", "$extensions": { "com.arco.design": { "tokenName": "orange-2", "cssVar": "--core-color-orange-2" } } },
+        "3": { "$type": "color", "$value": "rgb(255,207,139)", "$extensions": { "com.arco.design": { "tokenName": "orange-3", "cssVar": "--core-color-orange-3" } } },
+        "4": { "$type": "color", "$value": "rgb(255,182,93)", "$extensions": { "com.arco.design": { "tokenName": "orange-4", "cssVar": "--core-color-orange-4" } } },
+        "5": { "$type": "color", "$value": "rgb(255,154,46)", "$extensions": { "com.arco.design": { "tokenName": "orange-5", "cssVar": "--core-color-orange-5" } } },
+        "6": { "$type": "color", "$value": "rgb(255,125,0)", "$description": "Orange 6 – warning default", "$extensions": { "com.arco.design": { "tokenName": "orange-6", "cssVar": "--core-color-orange-6" } } },
+        "7": { "$type": "color", "$value": "rgb(210,95,0)", "$extensions": { "com.arco.design": { "tokenName": "orange-7", "cssVar": "--core-color-orange-7" } } },
+        "8": { "$type": "color", "$value": "rgb(166,69,0)", "$extensions": { "com.arco.design": { "tokenName": "orange-8", "cssVar": "--core-color-orange-8" } } },
+        "9": { "$type": "color", "$value": "rgb(121,46,0)", "$extensions": { "com.arco.design": { "tokenName": "orange-9", "cssVar": "--core-color-orange-9" } } },
+        "10": { "$type": "color", "$value": "rgb(77,27,0)", "$extensions": { "com.arco.design": { "tokenName": "orange-10", "cssVar": "--core-color-orange-10" } } }
+      },
+      "green": {
+        "1": { "$type": "color", "$value": "rgb(232,255,234)", "$extensions": { "com.arco.design": { "tokenName": "green-1", "cssVar": "--core-color-green-1" } } },
+        "2": { "$type": "color", "$value": "rgb(175,240,181)", "$extensions": { "com.arco.design": { "tokenName": "green-2", "cssVar": "--core-color-green-2" } } },
+        "3": { "$type": "color", "$value": "rgb(123,225,136)", "$extensions": { "com.arco.design": { "tokenName": "green-3", "cssVar": "--core-color-green-3" } } },
+        "4": { "$type": "color", "$value": "rgb(76,210,99)", "$extensions": { "com.arco.design": { "tokenName": "green-4", "cssVar": "--core-color-green-4" } } },
+        "5": { "$type": "color", "$value": "rgb(35,195,67)", "$extensions": { "com.arco.design": { "tokenName": "green-5", "cssVar": "--core-color-green-5" } } },
+        "6": { "$type": "color", "$value": "rgb(0,180,42)", "$description": "Green 6 – success default", "$extensions": { "com.arco.design": { "tokenName": "green-6", "cssVar": "--core-color-green-6" } } },
+        "7": { "$type": "color", "$value": "rgb(0,154,41)", "$extensions": { "com.arco.design": { "tokenName": "green-7", "cssVar": "--core-color-green-7" } } },
+        "8": { "$type": "color", "$value": "rgb(0,128,38)", "$extensions": { "com.arco.design": { "tokenName": "green-8", "cssVar": "--core-color-green-8" } } },
+        "9": { "$type": "color", "$value": "rgb(0,102,34)", "$extensions": { "com.arco.design": { "tokenName": "green-9", "cssVar": "--core-color-green-9" } } },
+        "10": { "$type": "color", "$value": "rgb(0,77,28)", "$extensions": { "com.arco.design": { "tokenName": "green-10", "cssVar": "--core-color-green-10" } } }
+      },
+      "purple": {
+        "1": { "$type": "color", "$value": "rgb(245,232,255)", "$extensions": { "com.arco.design": { "tokenName": "purple-1", "cssVar": "--core-color-purple-1" } } },
+        "6": { "$type": "color", "$value": "rgb(114,46,209)", "$description": "Purple 6 – default purple", "$extensions": { "com.arco.design": { "tokenName": "purple-6", "cssVar": "--core-color-purple-6" } } }
+      },
+      "cyan": {
+        "6": { "$type": "color", "$value": "rgb(20,201,201)", "$description": "Cyan 6 – default cyan", "$extensions": { "com.arco.design": { "tokenName": "cyan-6", "cssVar": "--core-color-cyan-6" } } }
+      },
+      "gold": {
+        "6": { "$type": "color", "$value": "rgb(247,186,30)", "$description": "Gold 6 – default gold", "$extensions": { "com.arco.design": { "tokenName": "gold-6", "cssVar": "--core-color-gold-6" } } }
+      },
+      "dark": {
+        "bg": {
+          "1": { "$type": "color", "$value": "#17171a", "$description": "Dark mode page background – darkest surface", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+          "2": { "$type": "color", "$value": "#232324", "$description": "Dark mode surface 2 – card background", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+          "3": { "$type": "color", "$value": "#2a2a2b", "$description": "Dark mode surface 3", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+          "4": { "$type": "color", "$value": "#313132", "$description": "Dark mode surface 4", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } },
+          "5": { "$type": "color", "$value": "#373739", "$description": "Dark mode surface 5 – lightest dark surface", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } }
+        },
+        "border": { "$type": "color", "$value": "#333335", "$description": "Dark mode default border color", "$extensions": { "com.anthropic.dtcg-skill": { "theme": "dark" } } }
+      },
+      "white": { "$type": "color", "$value": "#ffffff", "$description": "Pure white", "$extensions": { "com.arco.design": { "tokenName": "color-white", "cssVar": "--core-color-white" } } },
+      "black": { "$type": "color", "$value": "#000000", "$description": "Pure black", "$extensions": { "com.arco.design": { "tokenName": "color-black", "cssVar": "--core-color-black" } } }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "comp": {
+    "card": {
+      "bg": {
+        "default": { "$type": "color", "$value": "{semantic.color.surface.1}", "$description": "Card background", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-bg-default" } } }
+      },
+      "border": {
+        "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Card border", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-border-default" } } }
+      },
+      "radius": {
+        "default": { "$type": "dimension", "$value": "{semantic.radius.md}", "$description": "Card corner radius (8px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-radius-default" } } }
+      },
+      "shadow": {
+        "default": { "$type": "shadow", "$value": "{semantic.shadow.sm}", "$description": "Card default shadow (level1)", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-shadow-default" } } },
+        "hover":   { "$type": "shadow", "$value": "{semantic.shadow.md}", "$description": "Card hover shadow (level2)", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-shadow-hover" } } }
+      },
+      "header": {
+        "border": {
+          "default": { "$type": "color", "$value": "{semantic.color.border.default}", "$description": "Card header bottom divider", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-header-border-default" } } }
+        },
+        "text": {
+          "color": { "$type": "color", "$value": "{semantic.color.text.primary}", "$description": "Card title text color", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-header-text-color" } } }
+        }
+      },
+      "padding": {
+        "header": { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Card header padding (16px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-padding-header" } } },
+        "body":   { "$type": "dimension", "$value": "{semantic.spacing.md}", "$description": "Card body padding (16px)", "$extensions": { "com.arco.design": { "cssVar": "--comp-card-padding-body" } } }
+      }
+    }
+  }
+}

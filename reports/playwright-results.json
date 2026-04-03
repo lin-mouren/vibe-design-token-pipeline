@@ -1,0 +1,845 @@
+{
+  "config": {
+    "configFile": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright.config.ts",
+    "rootDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "token-contracts",
+        "name": "token-contracts",
+        "testDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright/token-contracts",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "interaction",
+        "name": "interaction",
+        "testDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright/interaction",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "visual-regression",
+        "name": "visual-regression",
+        "testDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright/visual-regression",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "a11y-audit",
+        "name": "a11y-audit",
+        "testDir": "/Users/lyndaleli/Work/Vibe coding/Project/DTCG SKILL/arco-design-system/arco-design/playwright/a11y-audit",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run storybook",
+      "url": "http://localhost:6006",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "token-contracts/button.token.spec.ts",
+      "file": "token-contracts/button.token.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Button token contracts",
+          "file": "token-contracts/button.token.spec.ts",
+          "line": 33,
+          "column": 6,
+          "specs": [
+            {
+              "title": "primary button uses --primary-6 for background",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ab27f52e15ebdd2cd8d6-dbc919e42d0fab9ab461",
+              "file": "token-contracts/button.token.spec.ts",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "all required CSS token vars are defined on :root",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ab27f52e15ebdd2cd8d6-d9262527487bbb96c401",
+              "file": "token-contracts/button.token.spec.ts",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "border-radius uses token value (not magic number)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ab27f52e15ebdd2cd8d6-93d1439535c45e1c7b02",
+              "file": "token-contracts/button.token.spec.ts",
+              "line": 62,
+              "column": 3
+            },
+            {
+              "title": "disabled button uses reduced opacity (token-driven)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ab27f52e15ebdd2cd8d6-25c8d4b9941d5530239a",
+              "file": "token-contracts/button.token.spec.ts",
+              "line": 72,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "token-contracts/design-tokens.spec.ts",
+      "file": "token-contracts/design-tokens.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Design token SSOT smoke test",
+          "file": "token-contracts/design-tokens.spec.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "all token families are loaded from arco.css",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "85bb288d183b1cd19a62-acf24da771b13f380fbf",
+              "file": "token-contracts/design-tokens.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "no [object Object] in CSS custom property values",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "token-contracts",
+                  "projectName": "token-contracts",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "85bb288d183b1cd19a62-7e14783dd1621acc7c68",
+              "file": "token-contracts/design-tokens.spec.ts",
+              "line": 56,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "interaction/button.interaction.spec.ts",
+      "file": "interaction/button.interaction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Button interaction",
+          "file": "interaction/button.interaction.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "button is focusable via Tab key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-a3e6709478617a3df6cb",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "button is clickable and fires click event",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-6290d39fdc8f3008bb8d",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "disabled button does not fire click",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-3f2165feaa36ac44e16f",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "button responds to Enter key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-536b6fef49b49e5b1fc7",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 47,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Switch interaction",
+          "file": "interaction/button.interaction.spec.ts",
+          "line": 62,
+          "column": 6,
+          "specs": [
+            {
+              "title": "switch toggles on click",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-110618b1f0ba78ce8104",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 68,
+              "column": 3
+            },
+            {
+              "title": "disabled switch does not toggle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-dea9284a12015f60b24c",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "switch is keyboard accessible (Space key toggles)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "interaction",
+                  "projectName": "interaction",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2fea089223b2484db0de-999bc941c85ae3380273",
+              "file": "interaction/button.interaction.spec.ts",
+              "line": 87,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual-regression/components.visual.spec.ts",
+      "file": "visual-regression/components.visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Button visual regression",
+          "file": "visual-regression/components.visual.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Primary button baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-1fac89909f5368163c8e",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "Button type matrix baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-52dece3a4dceb1f1d10d",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 27,
+              "column": 3
+            },
+            {
+              "title": "Disabled button baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-4aba08d3bca930214a7f",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 37,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Switch visual regression",
+          "file": "visual-regression/components.visual.spec.ts",
+          "line": 47,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Switch off state baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-0fc6234c58ff7a701e7b",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "Switch on state baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-5aeb5db5c42b02268170",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 57,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Tag visual regression",
+          "file": "visual-regression/components.visual.spec.ts",
+          "line": 67,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Tag color matrix baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-51b5ce2bdbcf3fdccfe1",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 68,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Card visual regression",
+          "file": "visual-regression/components.visual.spec.ts",
+          "line": 79,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Card default baseline",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "visual-regression",
+                  "projectName": "visual-regression",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "99b47709ad32662f2642-a18075421a44aafccad3",
+              "file": "visual-regression/components.visual.spec.ts",
+              "line": 80,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "a11y-audit/wcag-aa.spec.ts",
+      "file": "a11y-audit/wcag-aa.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WCAG AA: Button - Primary",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-7f4434ac64849029289e",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Button - Disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-4ef9ee9c2b6abc4b82e0",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Button - Danger",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-a0848160d4ba308d223a",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Input - Default",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-fca35af44722d1323cb8",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Card - Default",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-2135833cdd2c56cae650",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Tag - Blue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-1ddbeb4c39a984bc90b0",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Tag - Color Matrix",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-a13cbb3aee5a6c703625",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Switch - Off",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-122422fd15ecd3e9bb4f",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Switch - On",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-d32e48bac625db683247",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: Switch - Disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-cd7381ad644c3a7e27c5",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "WCAG AA: no color contrast failures in Token Color Matrix",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "a11y-audit",
+              "projectName": "a11y-audit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "282db4d0ac4c434c62d9-106c06d1aaf9e7399377",
+          "file": "a11y-audit/wcag-aa.spec.ts",
+          "line": 54,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-30T17:58:23.283Z",
+    "duration": 397.0300000000002,
+    "expected": 0,
+    "skipped": 31,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

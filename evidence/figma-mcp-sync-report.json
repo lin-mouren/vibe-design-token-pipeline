@@ -1,0 +1,20 @@
+{
+  "fileKey": "qtbgJ5T34iWfFx634uUXto",
+  "syncMethod": "figma-mcp-plugin-api",
+  "syncedAt": "2026-04-03T03:54:07.955Z",
+  "totalCollections": 4,
+  "totalVariables": 119,
+  "collections": [
+    { "name": "Core Colors", "modes": ["Default"], "count": 61 },
+    { "name": "Spacing", "modes": ["Default"], "count": 10 },
+    { "name": "Typography", "modes": ["Default"], "count": 14 },
+    { "name": "Semantic Colors", "modes": ["Light", "Dark"], "count": 34 }
+  ],
+  "variablesByType": { "COLOR": 95, "FLOAT": 24 },
+  "aliasCount": 34,
+  "directValueCount": 85,
+  "componentSets": 15,
+  "totalVariants": 87,
+  "pages": ["Components", "🎨 Token Reference", "Components", "📋 Overview", "💼 Dashboard (Business Page)"],
+  "syncStatus": "PASS"
+}
