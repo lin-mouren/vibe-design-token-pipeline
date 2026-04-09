@@ -1,7 +1,7 @@
 {
-  "name": "@arco-design/tokens",
+  "name": "@vibe-pipeline/arco-tokens",
   "version": "0.2.0",
-  "description": "Arco Design DTCG 2025.10 token package — CSS, SCSS, Tailwind, JS, iOS, Android",
+  "description": "Vibe Design Token Pipeline — Arco baseline brand · DTCG 2025.10 · CSS, SCSS, Tailwind, JS, iOS, Android",
   "type": "module",
   "main": "dist/ts/arco.tokens.js",
   "exports": {
@@ -29,7 +29,10 @@
     "test:playwright:visual": "npx playwright test --project=visual-regression",
     "test:playwright:a11y": "npx playwright test --project=a11y-audit",
     "test:playwright:update-snapshots": "npx playwright test --update-snapshots",
+    "gate:baseline": "node scripts/gates/gate-baseline-stories.mjs",
+    "gate:story-namespace": "node scripts/gates/gate-story-namespace.mjs",
     "gate:figma": "node scripts/gates/gate-figma.mjs",
+    "gate:figma:canvas": "node scripts/gates/gate-figma-canvas.mjs",
     "gate:code": "node scripts/gates/gate-code.mjs",
     "gate:delivery": "node scripts/gates/gate-delivery.mjs",
     "gates": "bash scripts/run-production-gates.sh",
@@ -39,7 +42,8 @@
     "stories:generate": "node scripts/generate-stories.mjs",
     "clean": "rm -rf dist",
     "figma:mcp-pull": "node figma/variables-sync/figma-mcp-pull.mjs",
-    "figma:mcp-push": "node figma/variables-sync/figma-mcp-push.mjs"
+    "figma:mcp-push": "node figma/variables-sync/figma-mcp-push.mjs",
+    "verify": "node scripts/figma-triple-verify.mjs"
   },
   "devDependencies": {
     "@arco-design/web-react": "^2.x",

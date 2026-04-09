@@ -1,4 +1,4 @@
-# Arco Design Token Package — 完整执行 Runbook
+# Vibe Design Token Pipeline — 完整执行 Runbook
 
 > 本 Runbook 涵盖从零环境到三个生产门全部通过的完整步骤，每步均可独立验证。
 

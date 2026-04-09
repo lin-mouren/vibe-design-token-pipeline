@@ -1,4 +1,4 @@
-# AGENTS.md — Multi-Agent Orchestration Contract
+# AGENTS.md — Vibe Design ↔ Code Token Pipeline · Multi-Agent Orchestration Contract
 
 ## Role Registry
 

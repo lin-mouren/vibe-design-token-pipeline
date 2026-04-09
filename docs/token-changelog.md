@@ -1,6 +1,6 @@
 # Token Changelog
 
-All notable changes to the Arco Design token package. Follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+All notable changes to the Vibe Design Token Pipeline. Follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
